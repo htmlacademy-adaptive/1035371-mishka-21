@@ -105,18 +105,27 @@
           <ul class="customer-name">
             <li class="customer-name__item">
               <label class="customer-name__label filter-label" for="name-input">Имя:</label>
-              <input class="customer-name__input" type="text" id="name-input" placeholder="Введите ваше имя*">
+              <input class="customer-name__input symbol-input" type="text" id="name-input"
+                     placeholder="Введите ваше имя*">
             </li>
             <li class="customer-name__item">
               <label class="customer-name__label filter-label" for="surname-input">Фамилия:</label>
-              <input class="customer-name__input" type="text" id="surname-input" placeholder="Укажите фамилию*">
+              <input class="customer-name__input symbol-input" type="text" id="surname-input"
+                     placeholder="Укажите фамилию*">
             </li>
             <li class="customer-name__item">
               <label class="customer-name__label filter-label" for="patronymic-input">Отчество:</label>
-              <input class="customer-name__input" type="text" id="patronymic-input"
+              <input class="customer-name__input symbol-input" type="text" id="patronymic-input"
                      placeholder="Отчество, если желаете">
             </li>
           </ul>
+        </fieldset>
+        <fieldset class="form__item">
+          <legend class="form__heading">Тел</legend>
+          <div class="customer-telephone">
+            <label class="visually-hidden" for="tel-input">Номер телефона</label>
+            <input class="customer-telephone__input symbol-input" type="tel" id="tel-input" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          </div>
         </fieldset>
       </form>
     </div>
