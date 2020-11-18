@@ -1,0 +1,30 @@
+.main-nav {
+  width: 100%;
+}
+
+.main-nav__toggle {
+  border: none;
+  box-shadow: none;
+  background-color: $transparent;
+}
+
+.main-nav__search {
+  color: $basic-text;
+}
+
+.main-nav__cart {
+  color: $basic-text;
+}
+
+.main-nav__delivery {
+  font-size: 15px;
+  color: $secondary-text;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__link {
+  color: $basic-text;
+}
