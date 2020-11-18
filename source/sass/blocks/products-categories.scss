@@ -1,0 +1,23 @@
+.products-categories {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.products-categories__list {
+  list-style: none;
+}
+
+.products-categories__item {
+  &--interior {
+    background-color: $product-category-1;
+  }
+
+  &--toys {
+    background-color: $product-category-2;
+  }
+}
+
+.products-categories__link {
+  color: $third-text;
+}
