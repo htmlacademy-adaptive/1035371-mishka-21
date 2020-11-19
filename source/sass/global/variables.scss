@@ -6,45 +6,26 @@ $font-stack: "Open Sans", "Arial", sans-serif;
 //-----------
 
 //Global
-$basic-background: #ffffff;
-$section-background: #f1f1f1;
-$secondary-text: #444444;
-$third-text: #ffffff;
-$subtitle: #63d1bb;
-$burger-button: #231f20;
-$element-outline: #ececec;
-$form-placeholder: #b3b3b3;
-$about-icons: #63d1bb;
 $transparent: transparent;
 
-//Text
-$basic-text: #000000;
-$basic-text-hover: rgba(#000000, 60%);
-$basic-text-active: rgba(#000000, 30%);
+$color-white: #ffffff;
+$color-white-hover: rgba(#ffffff, 60%);
+$color-white-active: rgba(#ffffff, 30%);
 
-//Buttons
-$button: #444444;
-$button-active: rgba(#ffffff, 30%);
-$button-arrow-hover: rgba(#ffffff, 60%);
-$button-arrow-active: rgba(#ffffff, 30%);
+$color-gray-100: #ececec;
+$color-gray-200: #f1f1f1;
+$color-gray-300: #cccccc;
+$color-gray-400: #b3b3b3;
+$color-gray-500: #444444;
+$color-gray-600: #231f20;
 
-//Icons
-$icons: #cccccc;
-$icons-hover: #63d1bb;
-$icons-active: rgba(#63d1bb, 30%);
+$color-black: #000000;
+$color-black-hover: rgba(#000000, 60%);
+$color-black-active: rgba(#000000, 30%);
 
-//Product-category
-$product-category-1: #63d1bb;
-$product-category-1-hover: #59d5bc;
-$product-category-2: #56c3b2;
-$product-category-2-hover: #46c1ae;
-
-//Link
-$link-hover: #46c1ae;
-$link-outline: #62d1ba;
-$link-hover-outline: #46c1ae;
-$link-hover-active: rgba(#46c1ae, 10%);
-
-//Input
-$input-outline: #444444;
-$input-outline-state :#62d1ba;
+$color-green-100: #59d5bc;
+$color-green-200: #63d1bb;
+$color-green-200-active: rgba(#63d1bb, 30%);
+$color-green-300: #56c3b2;
+$color-green-400: #46c1ae;
+$color-green-400-active: rgba(#46c1ae, 10%);

@@ -7,7 +7,7 @@
 .reviews__text {
   font-size: 15px;
   line-height: 30px;
-  color: $secondary-text;
+  color: $color-gray-500;
 }
 
 .reviews__author-name {
@@ -19,11 +19,11 @@
 .reviews__author-link {
   font-size: 17px;
   line-height: 30px;
-  color: $secondary-text;
+  color: $color-gray-500;
 }
 
 .reviews__button {
-  border: 1px solid $element-outline;
+  border: 1px solid $color-gray-100;
   box-shadow: none;
   background-color: $transparent;
 }
