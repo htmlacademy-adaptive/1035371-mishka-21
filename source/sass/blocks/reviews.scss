@@ -1,7 +1,7 @@
 .reviews__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .reviews__text {
@@ -24,6 +24,6 @@
 
 .reviews__button {
   border: 1px solid $color-gray-100;
-  box-shadow: none;
   background-color: $transparent;
+  box-shadow: none;
 }
