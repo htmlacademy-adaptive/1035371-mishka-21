@@ -1,0 +1,31 @@
+//Fonts
+$font-stack: "Open Sans", "Arial", sans-serif;
+
+//-----------
+// COLORS----
+//-----------
+
+//Global
+$transparent: transparent;
+
+$color-white: #ffffff;
+$color-white-hover: rgba(#ffffff, 60%);
+$color-white-active: rgba(#ffffff, 30%);
+
+$color-gray-100: #ececec;
+$color-gray-200: #f1f1f1;
+$color-gray-300: #cccccc;
+$color-gray-400: #b3b3b3;
+$color-gray-500: #444444;
+$color-gray-600: #231f20;
+
+$color-black: #000000;
+$color-black-hover: rgba(#000000, 60%);
+$color-black-active: rgba(#000000, 30%);
+
+$color-green-100: #59d5bc;
+$color-green-200: #63d1bb;
+$color-green-200-active: rgba(#63d1bb, 30%);
+$color-green-300: #56c3b2;
+$color-green-400: #46c1ae;
+$color-green-400-active: rgba(#46c1ae, 10%);

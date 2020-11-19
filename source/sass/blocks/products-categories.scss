@@ -1,0 +1,27 @@
+.products-categories {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.products-categories__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products-categories__item {
+  &--interior {
+    background-color: $color-green-200;
+  }
+
+  &--toys {
+    background-color: $color-green-300;
+  }
+}
+
+.products-categories__link {
+  display: block;
+  padding: 24px 0 30px 31px;
+  color: $color-white;
+}

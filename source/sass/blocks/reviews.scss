@@ -1,0 +1,29 @@
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__text {
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-gray-500;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.reviews__author-link {
+  font-size: 17px;
+  line-height: 30px;
+  color: $color-gray-500;
+}
+
+.reviews__button {
+  border: 1px solid $color-gray-100;
+  background-color: $transparent;
+  box-shadow: none;
+}

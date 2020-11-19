@@ -1,0 +1,32 @@
+.main-nav {
+  width: 100%;
+}
+
+.main-nav__toggle {
+  border: none;
+  background-color: $transparent;
+  box-shadow: none;
+}
+
+.main-nav__search {
+  color: $color-black;
+}
+
+.main-nav__cart {
+  color: $color-black;
+}
+
+.main-nav__delivery {
+  font-size: 15px;
+  color: $color-gray-500;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  color: $color-black;
+}

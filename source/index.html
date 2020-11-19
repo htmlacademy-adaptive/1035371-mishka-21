@@ -3,30 +3,31 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="page-header">
-  <nav class="main-nav">
+  <nav class="main-nav page-header__item">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <a class="main-nav__logo">
       <img src="#" width="113" height="46" alt="Мишка">
     </a>
     <a class="main-nav__search" href="#">Поиск по сайту</a>
     <a class="main-nav__cart" href="#">Корзина: пока пуста</a>
-    <ul class="main-nav__list site-list">
+    <ul class="main-nav__list main-nav__list--site">
       <li class="site-list__item">
-        <a href="#">Каталог товаров</a>
+        <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
       </li>
       <li class="site-list__item">
-        <a href="#">Вязание на заказ</a>
+        <a class="main-nav__link" href="form.html">Вязание на заказ</a>
       </li>
     </ul>
-    <ul class="main-nav__list offers-list">
+    <ul class="main-nav__list main-nav__list--offers">
       <li class="offers-list__item">
-        <a href="#">Новые поступления</a>
+        <a class="main-nav__link" href="#">Новые поступления</a>
       </li>
       <li class="offers-list__item">
-        <a href="#">Распродажа</a>
+        <a class="main-nav__link" href="#">Распродажа</a>
       </li>
     </ul>
     <p class="main-nav__delivery">Бесплатная доставка по России</p>
@@ -38,10 +39,10 @@
     <h2 class="visually-hidden">Категории товаров</h2>
     <ul class="products-categories__list">
       <li class="products-categories__item products-categories__item--interior">
-        <a href="#">Предметы интерьера</a>
+        <a class="products-categories__link" href="#">Предметы<br>интерьера</a>
       </li>
       <li class="products-categories__item products-categories__item--toys">
-        <a href="#">Детские игрушки</a>
+        <a class="products-categories__link" href="#">Детские<br>игрушки</a>
       </li>
     </ul>
   </section>
@@ -73,12 +74,12 @@
   <section class="about-us">
     <h2 class="about-us__heading section-heading">Коротко о нас:</h2>
     <ul class="about-us__list">
-      <li class="about-us__item">Экологически чистые материалы</li>
-      <li class="about-us__item">Скандинавский стиль по российской цене</li>
-      <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-      <li class="about-us__item">Связано вручную с любовью и умилением</li>
-      <li class="about-us__item">Поддержка отечественного производителя</li>
-      <li class="about-us__item">Поставляется в подарочной упаковке</li>
+      <li class="about-us__item">Экологически<br>чистые материалы</li>
+      <li class="about-us__item">Скандинавский стиль<br>по российской цене</li>
+      <li class="about-us__item">Увеличивает лайки<br>на фотографиях</li>
+      <li class="about-us__item">Связано вручную<br>с любовью и умилением</li>
+      <li class="about-us__item">Поддержка отечественного<br>производителя</li>
+      <li class="about-us__item">Поставляется<br>в подарочной упаковке</li>
     </ul>
   </section>
   <section class="reviews">
@@ -131,16 +132,15 @@
       <h2 class="contacts__heading section-heading">Контакты</h2>
       <dl class="contacts__list">
         <dt class="contacts__item">E-mail:</dt>
-        <dd class="contacts__description">info@mimimishkashop.ru</dd>
+        <dd class="contacts__description contacts__description--email">info@mimimishkashop.ru</dd>
         <dt class="contacts__item">Адрес</dt>
-        <dd class="contacts__description">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+        <dd class="contacts__description contacts__description--address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
       </dl>
-      <a class="contacts__write-us contacts__write-us--before button" href="#">Напишите нам</a>
       <iframe class="contacts__location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.3304763799065!2d30.32245446042498!3d59.938745108857034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1605360584589!5m2!1sru!2sru"
               width="320" height="454" aria-hidden="false"
               tabindex="0"></iframe>
-      <a class="contacts__write-us contacts__write-us--after button" href="#">Напишите нам</a>
+      <a class="contacts__write-us button" href="#">Напишите нам</a>
     </div>
   </section>
 </main>
