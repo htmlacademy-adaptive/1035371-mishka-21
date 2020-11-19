@@ -5,9 +5,9 @@
 }
 
 .products-categories__list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .products-categories__item {
@@ -21,5 +21,7 @@
 }
 
 .products-categories__link {
+  display: block;
+  padding: 24px 0 30px 31px;
   color: $color-white;
 }
