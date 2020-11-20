@@ -1,9 +1,9 @@
 .popular-product__label {
   font-size: 17px;
-  line-height: 17px;
   font-weight: 700;
-  color: $color-green-200;
+  line-height: 17px;
   text-transform: uppercase;
+  color: $color-green-200;
 }
 
 .popular-product__description {
@@ -20,7 +20,7 @@
 
 .popular-product__price {
   font-size: 17px;
-  line-height: 24px;
   font-weight: 700;
+  line-height: 24px;
   color: $color-gray-500;
 }
