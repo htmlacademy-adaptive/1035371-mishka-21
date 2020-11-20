@@ -3,37 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="page-header">
-  <nav class="main-nav">
+  <nav class="main-nav page-header__item">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <a class="main-nav__logo">
       <img src="#" width="113" height="46" alt="Мишка">
     </a>
     <a class="main-nav__search" href="#">Поиск по сайту</a>
     <a class="main-nav__cart" href="#">Корзина: пока пуста</a>
-    <ul class="main-nav__list site-list">
+    <ul class="main-nav__list main-nav__list--site">
       <li class="site-list__item">
-        <a href="#">Каталог товаров</a>
+        <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
       </li>
       <li class="site-list__item">
-        <a href="#">Вязание на заказ</a>
+        <a class="main-nav__link">Вязание на заказ</a>
       </li>
     </ul>
-    <ul class="main-nav__list offers-list">
+    <ul class="main-nav__list main-nav__list--offers">
       <li class="offers-list__item">
-        <a href="#">Новые поступления</a>
+        <a class="main-nav__link" href="#">Новые поступления</a>
       </li>
       <li class="offers-list__item">
-        <a href="#">Распродажа</a>
+        <a class="main-nav__link" href="#">Распродажа</a>
       </li>
     </ul>
     <p class="main-nav__delivery">Бесплатная доставка по России</p>
   </nav>
 </header>
 <main class="page-main">
-  <h1 class="main-title">Вязание на заказ</h1>
+  <h1 class="main-title page-main__title">Вязание на заказ</h1>
   <section class="form">
     <h2 class="visually-hidden">Форма заказа</h2>
     <div class="form__wrapper">
@@ -43,7 +44,7 @@
         <fieldset class="form-group">
           <legend class="form-group__heading">Тип</legend>
           <ul class="input-list">
-            <li class="input-list__item input-radio">
+            <li class="input-list__item input-list__item--radio input-radio">
               <input class="input-radio__field" type="radio" name="accessory" id="input-accessory" value="accessory" checked>
               <label class="input-radio__label" for="input-accessory">Аксессуар для
                 интерьера</label>
@@ -57,7 +58,7 @@
         <fieldset class="form-group">
           <legend class="form-group__heading">Цвет</legend>
           <ul class="input-list">
-            <li class="input-list__item input-checkbox">
+            <li class="input-list__item input-list__item--checkbox input-checkbox">
               <input class="input-list__checkbox input-checkbox__field" type="checkbox" name="white" id="color-white" checked>
               <label class="input-list__label input-checkbox__label" for="color-white">Белый</label>
             </li>
@@ -102,17 +103,17 @@
           </ul>
           <ul class="customer-contacts">
             <li class="text-input text-input--contacts">
-              <label class="text-input__label" for="tel-input">Тел</label>
+              <label class="form-group__heading" for="tel-input">Тел</label>
               <input class="text-input__field" type="tel" id="tel-input" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             </li>
             <li class="text-input text-input--contacts">
-              <label class="text-input__label" for="email-input">E-mail</label>
+              <label class="form-group__heading" for="email-input">E-mail</label>
               <input class="text-input__field" type="email" id="email-input" placeholder="Ваш Email*">
             </li>
           </ul>
         </fieldset>
         <div class="text-input text-input--more">
-          <label class="text-input__label" for="message">Доп</label>
+          <label class="form-group__heading" for="message">Доп</label>
           <textarea class="text-input__field" name="customer-message" id="message"
                     placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
