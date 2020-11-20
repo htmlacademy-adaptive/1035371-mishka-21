@@ -9,8 +9,8 @@ $transparent: transparent;
 
 //White
 $color-white: #ffffff;
-$color-white-hover: rgba(#ffffff, 60%);
-$color-white-active: rgba(#ffffff, 30%);
+$color-white-hover: rgba($color-white, 60%);
+$color-white-active: rgba($color-white, 30%);
 
 //Gray
 $color-gray-100: #ececec;
@@ -22,13 +22,13 @@ $color-gray-600: #231f20;
 
 //Black
 $color-black: #000000;
-$color-black-hover: rgba(#000000, 60%);
-$color-black-active: rgba(#000000, 30%);
+$color-black-hover: rgba($color-black, 60%);
+$color-black-active: rgba($color-black, 30%);
 
 //Green
 $color-green-100: #59d5bc;
 $color-green-200: #63d1bb;
-$color-green-200-active: rgba(#63d1bb, 30%);
+$color-green-200-active: rgba($color-green-200, 30%);
 $color-green-300: #56c3b2;
 $color-green-400: #46c1ae;
-$color-green-400-active: rgba(#46c1ae, 10%);
+$color-green-400-active: rgba($color-green-400, 10%);
