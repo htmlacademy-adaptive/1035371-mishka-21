@@ -4,8 +4,17 @@
   list-style: none;
 }
 
+.about-us__heading {
+  margin-bottom: 28px;
+}
+
 .about-us__item {
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.about-us__item:last-child {
+  margin-bottom: 0;
 }

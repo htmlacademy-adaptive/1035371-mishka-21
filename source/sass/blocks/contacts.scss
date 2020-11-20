@@ -1,7 +1,7 @@
 .contacts__list {
   font-size: 14px;
   line-height: 30px;
-  color: $secondary-text;
+  color: $color-gray-500;
 }
 
 .contacts__item {
@@ -10,10 +10,14 @@
 
 .contacts__description {
   &--email {
-    border-bottom: 1px solid $link-outline;
+    border-bottom: 1px solid $color-green-200;
   }
 }
 
 .contacts__location {
   border: none;
+}
+
+.contacts__write-us {
+  padding: 12px 38px;
 }

@@ -12,14 +12,16 @@
 
 .products-categories__item {
   &--interior {
-    background-color: $product-category-1;
+    background-color: $color-green-200;
   }
 
   &--toys {
-    background-color: $product-category-2;
+    background-color: $color-green-300;
   }
 }
 
 .products-categories__link {
-  color: $third-text;
+  display: block;
+  padding: 24px 0 30px 31px;
+  color: $color-white;
 }
