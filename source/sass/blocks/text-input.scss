@@ -1,20 +1,16 @@
 .text-input {
   font-size: 17px;
   font-weight: 700;
-}
 
-.text-input--name .text-input__label {
-  line-height: 18px;
-}
+  &--name {
+    margin-bottom: 22px;
+  }
 
-.text-input--contacts .text-input__label {
-  line-height: 16px;
-  text-transform: uppercase;
-  color: $color-green-200;
-}
+  &--contacts {
+    margin-bottom: 35px;
+  }
 
-.text-input--more .text-input__label {
-  line-height: 16px;
-  text-transform: uppercase;
-  color: $color-green-200;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
