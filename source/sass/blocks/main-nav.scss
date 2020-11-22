@@ -1,4 +1,6 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -6,27 +8,51 @@
   border: none;
   background-color: $transparent;
   box-shadow: none;
+  position: absolute;
+
+  &--open {
+    display: none;
+  }
 }
 
-.main-nav__search {
-  color: $color-black;
+.main-nav__logo {
+  margin-bottom: 22px;
 }
 
-.main-nav__cart {
+.main-nav__link {
+  display: block;
+  padding: 27px 0;
   color: $color-black;
+  border-bottom: 1px solid $color-gray-100;
+
+  &:first-child {
+    border-top: 1px solid $color-gray-100;
+  }
+
+  &--search {
+    order: 3;
+    color: $color-black;
+  }
+
+  &--cart {
+    order: 4;
+    color: $color-black;
+  }
 }
 
 .main-nav__delivery {
   font-size: 15px;
+  display: none;
   color: $color-gray-500;
 }
 
 .main-nav__list {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-.main-nav__link {
-  color: $color-black;
+  &--offers {
+    display: none;
+  }
 }
