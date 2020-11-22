@@ -3,37 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="page-header">
-  <nav class="main-nav">
+  <nav class="main-nav page-header__item">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <a class="main-nav__logo">
+    <a class="main-nav__logo" href="index.html">
       <img src="#" width="113" height="46" alt="Мишка">
     </a>
     <a class="main-nav__search" href="#">Поиск по сайту</a>
     <a class="main-nav__cart" href="#">Корзина: пока пуста</a>
-    <ul class="main-nav__list site-list">
+    <ul class="main-nav__list main-nav__list--site">
       <li class="site-list__item">
-        <a href="#">Каталог товаров</a>
+        <a class="main-nav__link">Каталог товаров</a>
       </li>
       <li class="site-list__item">
-        <a href="#">Вязание на заказ</a>
+        <a class="main-nav__link" href="form.html">Вязание на заказ</a>
       </li>
     </ul>
-    <ul class="main-nav__list offers-list">
+    <ul class="main-nav__list main-nav__list--offers">
       <li class="offers-list__item">
-        <a href="#">Новые поступления</a>
+        <a class="main-nav__link" href="#">Новые поступления</a>
       </li>
       <li class="offers-list__item">
-        <a href="#">Распродажа</a>
+        <a class="main-nav__link" href="#">Распродажа</a>
       </li>
     </ul>
     <p class="main-nav__delivery">Бесплатная доставка по России</p>
   </nav>
 </header>
 <main class="page-main">
-  <h1 class="main-title">Каталог товаров</h1>
+  <h1 class="main-title page-main__title">Каталог товаров</h1>
   <section class="products">
     <h2 class="visually-hidden">Список товаров</h2>
     <ul class="products__list">
@@ -44,7 +45,9 @@
         </a>
         <p class="products__description">Рост 30 см, вес 200 г</p>
         <p class="products__price">1 200 руб.</p>
-        <a class="products__add-to-cart" href="#">Добавить в корзину</a>
+        <a class="products__add-to-cart" href="#">
+          <span class="visually-hidden">Добавить в корзину</span>
+        </a>
       </li>
       <li class="products__item">
         <a class="products__link" href="#">
@@ -53,7 +56,9 @@
         </a>
         <p class="products__description">Диаметр 15 см, высота 10 см</p>
         <p class="products__price">690 руб.</p>
-        <a class="products__add-to-cart" href="#">Добавить в корзину</a>
+        <a class="products__add-to-cart" href="#">
+          <span class="visually-hidden">Добавить в корзину</span>
+        </a>
       </li>
       <li class="products__item">
         <a class="products__link" href="#">
@@ -62,7 +67,9 @@
         </a>
         <p class="products__description">Диаметр 30 см, высота 30 см</p>
         <p class="products__price">1 500 руб.</p>
-        <a class="products__add-to-cart" href="#">Добавить в корзину</a>
+        <a class="products__add-to-cart" href="#">
+          <span class="visually-hidden">Добавить в корзину</span>
+        </a>
       </li>
     </ul>
   </section>

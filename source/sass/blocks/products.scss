@@ -1,0 +1,28 @@
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products__item {
+  border: 1px solid $color-gray-100;
+}
+
+.products__name {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $color-black;
+}
+
+.products__description {
+  font-size: 13px;
+  line-height: 30px;
+  color: $color-gray-500;
+}
+
+.products__price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}
