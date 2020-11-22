@@ -5,6 +5,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, max-content);
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 58px;
+  }
 }
 
 .popular-product__heading {
