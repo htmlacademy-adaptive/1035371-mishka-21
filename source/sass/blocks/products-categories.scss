@@ -8,9 +8,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .products-categories__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
   &--interior {
     background-color: $color-green-200;
   }
@@ -22,4 +30,9 @@
 
 .products-categories__link {
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
