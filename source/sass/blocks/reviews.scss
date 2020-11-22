@@ -4,16 +4,33 @@
   list-style: none;
 }
 
+.reviews__item {
+  display: none;
+  position: relative;
+}
+
 .reviews__text {
   font-size: 15px;
   line-height: 30px;
   color: $color-gray-500;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-name {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-link {
@@ -23,7 +40,25 @@
 }
 
 .reviews__button {
+  display: inline;
+  width: 49%;
+  box-shadow: none;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+}
+
+.reviews__write-button {
+  display: block;
+  padding: 16px;
   border: 1px solid $color-gray-100;
   background-color: $transparent;
   box-shadow: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    font-size: 17px;
+  }
 }
