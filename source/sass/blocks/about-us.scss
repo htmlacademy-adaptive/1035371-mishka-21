@@ -2,6 +2,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 115px;
+  }
 }
 
 .about-us__heading {
@@ -13,6 +23,11 @@
   font-weight: 700;
   line-height: 20px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .about-us__item:last-child {
