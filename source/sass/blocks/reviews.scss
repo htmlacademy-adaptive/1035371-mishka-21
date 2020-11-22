@@ -5,8 +5,8 @@
 }
 
 .reviews__item {
-  display: none;
   position: relative;
+  display: none;
 }
 
 .reviews__text {
@@ -42,8 +42,8 @@
 .reviews__button {
   display: inline;
   width: 49%;
-  box-shadow: none;
   outline: none;
+  box-shadow: none;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -58,7 +58,7 @@
   box-shadow: none;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     font-size: 17px;
+    position: absolute;
   }
 }
