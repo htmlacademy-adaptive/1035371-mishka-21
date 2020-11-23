@@ -7,6 +7,10 @@
 .reviews__item {
   position: relative;
   display: none;
+
+  &--shown {
+    display: block;
+  }
 }
 
 .reviews__text {
