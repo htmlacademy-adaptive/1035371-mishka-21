@@ -1,28 +1,30 @@
 .popular-product__wrapper {
-  position: relative;
   max-width: 270px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    max-width: 668px;
+    max-width: none;
     margin: 0 auto;
+    padding: 0 50px;
     grid-column-gap: 42px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, max-content);
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 867px;
+    max-width: 1150px;
+    padding-left: 175px;
     grid-column-gap: 58px;
-    margin-left: auto;
-    margin-right: 50px;
   }
 }
 
 .popular-product__heading {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+    grid-row: 1/2;
   }
 }
 
@@ -35,16 +37,16 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 60px;
-    right: 60px;
     width: 100px;
+    margin-top: 40px;
+    margin-left: 812px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: -175px;
-    right: 60px;
+    margin-left: -140px;
+    margin-top: 60px;
     width: 100px;
     text-align: center;
   }
@@ -89,7 +91,11 @@
 
 .popular-product__image {
   @media (min-width: $tablet-width) {
-    grid-row: 2/-1;
+    grid-row: 2/6;
     grid-column: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/-1;
   }
 }
