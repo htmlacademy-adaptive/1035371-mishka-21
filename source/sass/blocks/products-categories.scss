@@ -16,11 +16,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    max-width: 668px;
+    padding: 0 50px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     max-width: 1050px;
   }
 }
