@@ -6,7 +6,9 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, max-content);
     grid-column-gap: 100px;
+    grid-auto-flow: column;
   }
 
   @media (min-width: $desktop-width) {
