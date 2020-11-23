@@ -32,8 +32,8 @@
 }
 
 .contacts__location {
-  border: none;
   width: 100%;
+  border: none;
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;

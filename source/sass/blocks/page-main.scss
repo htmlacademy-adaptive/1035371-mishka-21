@@ -3,20 +3,17 @@
   padding-bottom: 72px;
 
   &--index {
-    padding-bottom: 120px;
-    margin: 0 auto;
     max-width: 248px;
+    margin: 0 auto;
+    padding-bottom: 120px;
 
     @media (min-width: $tablet-width) {
-      padding-right: 80px;
+      max-width: 509px;
       padding-bottom: 372px;
-      padding-left: 80px;
-      max-width: 768px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 175px;
-      padding-right: 175px;
+      max-width: 700px;
     }
   }
 }
