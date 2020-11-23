@@ -1,15 +1,22 @@
 .page-main__title {
   margin: 0;
-  padding-top: 72px;
   padding-bottom: 72px;
-  text-align: center;
 
   &--index {
     padding-bottom: 120px;
+    margin: 0 auto;
+    max-width: 248px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 155px;
+      padding-right: 80px;
       padding-bottom: 372px;
+      padding-left: 80px;
+      max-width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 175px;
+      padding-right: 175px;
     }
   }
 }

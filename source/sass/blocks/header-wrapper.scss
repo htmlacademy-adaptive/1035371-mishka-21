@@ -1,0 +1,11 @@
+.header-wrapper {
+  background-color: $color-gray-200;
+  padding-top: 72px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 155px;
+  }
+}
