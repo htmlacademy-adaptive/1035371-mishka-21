@@ -1,3 +1,18 @@
+.reviews__wrapper {
+  position: relative;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 225px;
+  }
+}
+
 .reviews__list {
   margin: 0;
   padding: 0;
@@ -5,8 +20,8 @@
 }
 
 .reviews__item {
-  position: relative;
   display: none;
+  margin: 0;
 
   &--shown {
     display: block;
@@ -40,12 +55,18 @@
 .reviews__author-link {
   font-size: 17px;
   line-height: 30px;
+  display: block;
+  margin-right: auto;
   color: $color-gray-500;
 }
 
+.reviews__navigation {
+  display: flex;
+  width: 100%;
+}
+
 .reviews__button {
-  display: inline;
-  width: 49%;
+  width: 50%;
   outline: none;
   box-shadow: none;
 
@@ -57,12 +78,14 @@
 .reviews__write-button {
   display: block;
   padding: 16px;
-  border: 1px solid $color-gray-100;
+  border: 2px solid $color-gray-500;
   background-color: $transparent;
   box-shadow: none;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     position: absolute;
+    top: 0;
+    right: 50px;
   }
 }

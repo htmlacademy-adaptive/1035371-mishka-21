@@ -1,9 +1,21 @@
 .page-footer {
   background-color: $color-gray-200;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
   }
 }
 
@@ -17,6 +29,7 @@
 
 .page-footer__social-list {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
