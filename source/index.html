@@ -37,25 +37,25 @@
   </nav>
 </header>
 <main class="page-main">
-  <!--  todo запихать все в один div-->
-  <div class="page-main__header-wrapper">
-    <h1 class="main-title page-main__title page-main__title--index">Милые штуки ручной<br>работы для дома</h1>
+  <div class="page-main__wrapper">
+    <div class="page-main__header-wrapper">
+      <h1 class="main-title page-main__title page-main__title--index">Милые штуки ручной<br>работы для дома</h1>
+    </div>
+    <section class="products-categories">
+      <h2 class="visually-hidden">Категории товаров</h2>
+      <ul class="products-categories__list">
+        <li class="products-categories__item products-categories__item--interior">
+          <a class="products-categories__link" href="#">Предметы<br>интерьера</a>
+        </li>
+        <li class="products-categories__item products-categories__item--toys">
+          <a class="products-categories__link" href="#">Детские<br>игрушки</a>
+        </li>
+      </ul>
+    </section>
   </div>
-  <section class="products-categories">
-    <h2 class="visually-hidden">Категории товаров</h2>
-    <ul class="products-categories__list">
-      <li class="products-categories__item products-categories__item--interior">
-        <a class="products-categories__link" href="#">Предметы<br>интерьера</a>
-      </li>
-      <li class="products-categories__item products-categories__item--toys">
-        <a class="products-categories__link" href="#">Детские<br>игрушки</a>
-      </li>
-    </ul>
-  </section>
   <section class="popular-product">
     <!--    todo убрать wrapper-->
-    <div class="popular-product__wrapper">
-<!--      todo вписать сюда label-->
+      <!--      todo вписать сюда label-->
       <h2 class="popular-product__heading section-heading">Вязаные корзинки</h2>
       <span class="popular-product__label">Товар недели</span>
       <p class="popular-product__description">
@@ -79,13 +79,12 @@
       <p class="popular-product__price">Цена: 990 руб.</p>
       <a class="popular-product__order-button button" href="#">Заказать</a>
       <img class="popular-product__image" src="#" alt="Вязанные корзинки">
-    </div>
   </section>
   <section class="about-us">
     <div class="about-us__wrapper">
       <h2 class="about-us__heading section-heading">Коротко о нас:</h2>
       <ul class="about-us__list">
-<!--        todo поменять порядок-->
+        <!--        todo поменять порядок-->
         <li class="about-us__item">Экологически<br>чистые материалы</li>
         <li class="about-us__item">Скандинавский стиль<br>по российской цене</li>
         <li class="about-us__item">Увеличивает лайки<br>на фотографиях</li>
@@ -143,7 +142,7 @@
     </div>
   </section>
   <section class="contacts">
-<!--    todo убрать wrapper-->
+    <!--    todo убрать wrapper-->
     <div class="contacts__wrapper">
       <h2 class="contacts__heading section-heading">Контакты</h2>
       <dl class="contacts__list">
