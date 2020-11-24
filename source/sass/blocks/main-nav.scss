@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 320px;
-  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -50,10 +48,12 @@
 
 .main-nav__link {
   display: block;
-  padding: 27px 0 27px 46px;
+  padding: 27px 30px 27px 76px;
   color: $color-black;
+  border-bottom: 1px solid $color-gray-100;
 
   @media (min-width: $tablet-width) {
+    padding-right: 0;
     padding-left: 0;
     border: none;
   }
@@ -145,5 +145,9 @@
       order: -1;
       grid-column: auto;
     }
+  }
+
+  &--site .site-list__item:first-child .main-nav__link {
+    border-top: 1px solid $color-gray-100;
   }
 }

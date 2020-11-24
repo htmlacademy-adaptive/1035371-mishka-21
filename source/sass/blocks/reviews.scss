@@ -66,11 +66,13 @@
 }
 
 .reviews__button {
+  //todo убрать ширину, добавить flex-grow
   width: 50%;
   outline: none;
   box-shadow: none;
 
   @media (min-width: $tablet-width) {
+    //todo добавить отступы для кнопок, фикс-ширину
     position: absolute;
   }
 }

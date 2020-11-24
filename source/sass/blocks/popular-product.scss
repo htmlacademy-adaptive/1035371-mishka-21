@@ -1,6 +1,8 @@
 .popular-product__wrapper {
+  //todo убрать max-width для всех БЭМ блоков
   max-width: 270px;
   margin: 0 auto;
+  //todo добавить еще одно разрешение
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -27,7 +29,7 @@
     grid-row: 1/2;
   }
 }
-
+//todo привзять к блоку
 .popular-product__label {
   display: none;
   font-size: 17px;
