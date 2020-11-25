@@ -13,6 +13,8 @@
 }
 
 .about-us__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -22,8 +24,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, max-content);
     grid-column-gap: 100px;
-    //todo убрать, добавить order
-    grid-auto-flow: column;
   }
 
   @media (min-width: $tablet-width) {
@@ -31,7 +31,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, max-content);
     grid-column-gap: 100px;
-    grid-auto-flow: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,6 +47,14 @@
   font-weight: 700;
   line-height: 20px;
   margin-bottom: 30px;
+
+  &:nth-child(2n) {
+    order: 1;
+
+    @media (min-width: 550px) {
+      order: 0;
+    }
+  }
 
   @media (min-width: 550px) {
     font-size: 16px;
