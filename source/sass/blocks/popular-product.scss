@@ -1,7 +1,6 @@
 .popular-product {
   margin: 0 auto;
   padding: 0 30px;
-  //todo добавить еще одно разрешение
 
   @media (min-width: 560px) {
     display: grid;
@@ -29,7 +28,6 @@
   }
 }
 
-//todo привзять к блоку
 .popular-product__label {
   font-size: 17px;
   font-weight: 700;
@@ -102,7 +100,7 @@
   margin: 0 auto;
 
   @media (min-width: 560px) {
-    grid-row: 2/6;
+    grid-row: 2/-1;
     grid-column: 2/3;
   }
 
