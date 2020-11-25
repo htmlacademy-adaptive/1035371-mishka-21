@@ -1,10 +1,9 @@
 .popular-product {
-  //todo убрать max-width для всех БЭМ блоков
-  max-width: 270px;
   margin: 0 auto;
+  padding: 0 30px;
   //todo добавить еще одно разрешение
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 560px) {
     display: grid;
     max-width: none;
     margin: 0 auto;
@@ -24,31 +23,31 @@
 .popular-product__heading {
   position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 560px) {
     grid-column: 1/-1;
     grid-row: 1/2;
   }
 }
+
 //todo привзять к блоку
 .popular-product__label {
-  display: none;
   font-size: 17px;
   font-weight: 700;
   line-height: 17px;
   text-transform: uppercase;
   color: $color-green-200;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 560px) {
     position: absolute;
-    width: 100px;
     top: 0;
     right: 0;
+    width: 100px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -140px;
-    margin-top: 60px;
+    top: 15px;
+    left: -180px;
     width: 100px;
     text-align: center;
   }
@@ -59,7 +58,7 @@
   line-height: 24px;
   color: $color-gray-500;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 560px) {
     font-size: 17px;
     line-height: 30px;
   }
@@ -77,22 +76,32 @@
   line-height: 24px;
   color: $color-gray-500;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 560px) {
     font-size: 20px;
     line-height: 24px;
   }
 }
 
 .popular-product__order-button {
+  display: block;
+  margin: 0 auto;
   padding: 16px 70px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 560px) {
     font-size: 17px;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 .popular-product__image {
-  @media (min-width: $tablet-width) {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 560px) {
     grid-row: 2/6;
     grid-column: 2/3;
   }
