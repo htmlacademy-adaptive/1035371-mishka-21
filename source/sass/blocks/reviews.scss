@@ -20,6 +20,7 @@
 }
 
 .reviews__item {
+  position: relative;
   display: none;
   margin: 0;
 
@@ -63,17 +64,22 @@
 .reviews__navigation {
   display: flex;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    width: 176px;
+  }
 }
 
 .reviews__button {
-  //todo убрать ширину, добавить flex-grow
-  width: 50%;
+  flex-grow: 1;
   outline: none;
   box-shadow: none;
 
   @media (min-width: $tablet-width) {
-    //todo добавить отступы для кнопок, фикс-ширину
-    position: absolute;
+    padding: 19px;
   }
 }
 
