@@ -1,7 +1,39 @@
+.about-us__wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    padding-left: 225px;
+  }
+}
+
 .about-us__list {
+  display: grid;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: 550px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    grid-column-gap: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 115px;
+  }
 }
 
 .about-us__heading {
@@ -13,6 +45,23 @@
   font-weight: 700;
   line-height: 20px;
   margin-bottom: 30px;
+
+  &:nth-child(2n) {
+    order: 1;
+
+    @media (min-width: 550px) {
+      order: 0;
+    }
+  }
+
+  @media (min-width: 550px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .about-us__item:last-child {

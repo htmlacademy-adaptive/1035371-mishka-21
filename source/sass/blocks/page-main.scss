@@ -1,5 +1,36 @@
+.page-main__wrapper {
+  background-color: $color-gray-200;
+}
+
 .page-main__title {
-  padding-top: 72px;
+  margin: 0;
   padding-bottom: 72px;
+
+  &--index {
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 509px;
+      padding-bottom: 372px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 700px;
+    }
+  }
+}
+
+.page-main__header-wrapper {
+  padding-top: 72px;
+  padding-right: 30px;
+  padding-left: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 155px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }

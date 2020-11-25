@@ -1,0 +1,14 @@
+.offers-list__item {
+  @media (min-width: $tablet-width) {
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 33px;
+  }
+}
+
+.offers-list__item .main-nav__link {
+  font-size: 15px;
+  line-height: 24px;
+}
