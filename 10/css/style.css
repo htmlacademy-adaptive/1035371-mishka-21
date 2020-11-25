@@ -47,8 +47,7 @@ img {
       padding-left: 225px; } }
 
 .about-us__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -423,6 +422,9 @@ img {
   margin: 0 auto;
   padding-top: 22px; }
 
+.page-main__wrapper {
+  background-color: #f1f1f1; }
+
 .page-main__title {
   margin: 0;
   padding-bottom: 72px; }
@@ -442,8 +444,7 @@ img {
   padding-top: 72px;
   padding-right: 30px;
   padding-left: 30px;
-  text-align: center;
-  background-color: #f1f1f1; }
+  text-align: center; }
   @media (min-width: 768px) {
     .page-main__header-wrapper {
       padding-top: 155px;
@@ -534,13 +535,11 @@ img {
 .popular-product__order-button {
   display: block;
   margin: 0 auto;
-  padding: 16px 70px; }
+  padding: 16px 0; }
   @media (min-width: 560px) {
     .popular-product__order-button {
       font-size: 17px;
       display: block;
-      padding-left: 0;
-      padding-right: 0;
       margin-left: 0;
       margin-right: 0; } }
 
