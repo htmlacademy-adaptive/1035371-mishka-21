@@ -13,4 +13,8 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &__label {
+    display: block;
+  }
 }

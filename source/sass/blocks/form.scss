@@ -1,7 +1,20 @@
+.form {
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+}
+
 .form__description {
   font-size: 13px;
   line-height: 24px;
   color: $color-gray-500;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form__clarification {
@@ -11,6 +24,9 @@
 }
 
 .form__button {
-  padding: 18px 37px;
+  display: block;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: $transparent;
 }
