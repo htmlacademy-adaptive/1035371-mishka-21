@@ -4,25 +4,28 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
 <header class="page-header">
   <nav class="main-nav page-header__item">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <button class="main-nav__toggle main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <a class="main-nav__logo" href="index.html">
-      <img src="#" width="113" height="46" alt="Мишка">
+      <img src="img/mobile-logo.svg" width="113" height="46" alt="Мишка">
     </a>
-    <a class="main-nav__search" href="#">Поиск по сайту</a>
-    <a class="main-nav__cart" href="#">Корзина: пока пуста</a>
-    <ul class="main-nav__list main-nav__list--site">
+    <a class="main-nav__link main-nav__link--search" href="#" aria-label="Поиск по сайту">
+      <span class="main-nav__label">Поиск по сайту</span>
+    </a>
+    <a class=" main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a>
+    <ul class="main-nav__list main-nav__list--site site-list">
       <li class="site-list__item">
         <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
       </li>
       <li class="site-list__item">
-        <a class="main-nav__link">Вязание на заказ</a>
+        <a class="main-nav__link" href="form.html">Вязание на заказ</a>
       </li>
     </ul>
-    <ul class="main-nav__list main-nav__list--offers">
+    <ul class="main-nav__list main-nav__list--offers offers-list">
       <li class="offers-list__item">
         <a class="main-nav__link" href="#">Новые поступления</a>
       </li>
@@ -34,7 +37,9 @@
   </nav>
 </header>
 <main class="page-main">
-  <h1 class="main-title page-main__title">Вязание на заказ</h1>
+  <div class="page-main__header-wrapper page-main__header-wrapper--form">
+    <h1 class="main-title page-main__title page-main__title--form">Вязание на заказ</h1>
+  </div>
   <section class="form">
     <h2 class="visually-hidden">Форма заказа</h2>
     <div class="form__wrapper">
@@ -126,17 +131,23 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper">
     <a class="page-footer__logo">
-      <img src="#" width="101" height="36" alt="Мишка - милые штуки ручной работы">
+      <img src="../img/mobile-logo.svg" width="101" height="36" alt="Мишка - милые штуки ручной работы">
     </a>
     <ul class="page-footer__social-list">
       <li class="page-footer__social-item">
-        <a class="page-footer__instagram visually-hidden" href="#">Instagram</a>
+        <a class="page-footer__instagram" href="#">
+          <span>Instagram</span>
+        </a>
       </li>
       <li class="page-footer__social-item">
-        <a class="page-footer__facebook visually-hidden" href="#">Facebook</a>
+        <a class="page-footer__facebook" href="#">
+          <span>Facebook</span>
+        </a>
       </li>
       <li class="page-footer__social-item">
-        <a class="page-footer__twitter visually-hidden" href="#">Twitter</a>
+        <a class="page-footer__twitter" href="#">
+          <span>Twitter</span>
+        </a>
       </li>
     </ul>
     <a class="page-footer__developer-label" href="#">Разработано <span class="page-footer__developer-logo visually-hidden">HTML Academy</span></a>
