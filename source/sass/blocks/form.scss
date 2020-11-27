@@ -1,10 +1,22 @@
 .form {
+  position: relative;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
   }
 }
+
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: $color-gray-200;
+  }
+}
+
 
 .form__description {
   font-size: 13px;
@@ -14,6 +26,14 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 225px;
   }
 }
 
@@ -21,12 +41,29 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-gray-500;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    position: absolute;
+    right: 50px;
+  }
 }
 
 .form__button {
   display: block;
-  width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   background-color: $transparent;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 225px;
+    max-width: 1150px;
+  }
 }
