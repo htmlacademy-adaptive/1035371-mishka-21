@@ -59,4 +59,12 @@
       padding-top: 100px;
     }
   }
+
+  &--catalog {
+    padding-top: 72px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
 }
