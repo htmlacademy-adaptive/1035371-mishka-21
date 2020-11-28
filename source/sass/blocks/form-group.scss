@@ -5,13 +5,15 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    padding: 0 50px 0 225px;
+    display: grid;
+    padding: 0 50px;
+    grid-template-columns: 1fr 3fr;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
     max-width: 1150px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 4fr 1fr;
   }
 }
 
@@ -25,14 +27,5 @@
 
   @media (min-width: 500px) {
     display: inline;
-  }
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 97px;
   }
 }

@@ -15,6 +15,28 @@
   @media (min-width: $tablet-width) {
     background-color: $color-gray-200;
   }
+
+  &--transparent {
+    display: grid;
+    padding: 0 50px;
+    background-color: $transparent;
+    grid-template-rows: repeat(2, max-content);
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 1150px;
+      margin: 0 auto;
+      grid-template-columns: 1fr 2fr 2fr 1fr;
+    }
+  }
+}
+
+.form__fields {
+  //display: grid;
+  //grid-template-columns: 1fr 1fr;
 }
 
 
@@ -40,13 +62,15 @@
 .form__clarification {
   font-size: 14px;
   line-height: 16px;
+  margin: 0 auto;
   color: $color-gray-500;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    position: absolute;
-    right: 50px;
+    order: 2;
+    margin: auto 0 auto auto;
+    grid-template-columns: 3/4;
   }
 }
 
@@ -57,13 +81,13 @@
   background-color: $transparent;
 
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
+    margin-right: auto;
     padding-right: 32px;
     padding-left: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 225px;
     max-width: 1150px;
+    grid-column: 2/3;
   }
 }
