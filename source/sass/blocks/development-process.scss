@@ -1,17 +1,32 @@
+.development-process {
+  border: 1px solid $color-gray-100;
+}
+
 .development-process__heading {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0 34px 0 91px;
 }
 
 .development-process__description {
   font-size: 13px;
   line-height: 24px;
   color: $color-gray-500;
+  margin: 0 34px;
 }
 
 .development-process__order {
   padding: 18px 11px;
   background-color: $transparent;
   box-shadow: none;
+  margin: 0 34px 33px 34px;
+}
+
+.development-process__visualisation {
+  position: relative;
+}
+
+.development-process__button {
+  position: absolute;
 }
