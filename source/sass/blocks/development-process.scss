@@ -19,10 +19,10 @@
   margin: 0 34px 0 91px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 107px;
-    margin-right: 40px;
     font-size: 20px;
     line-height: 24px;
+    margin-right: 40px;
+    margin-left: 107px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,10 +37,10 @@
   color: $color-gray-500;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
-    margin-right: 40px;
     font-size: 15px;
     line-height: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,15 +55,15 @@
   box-shadow: none;
 
   @media (min-width: $tablet-width) {
-    margin-left: 40px;
     margin-right: 40px;
+    margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
-    padding: 18px 45px;
     margin-right: auto;
     margin-bottom: auto;
+    margin-left: 0;
+    padding: 18px 45px;
   }
 }
 

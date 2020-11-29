@@ -11,27 +11,27 @@
 }
 
 .products__item {
-  border: 1px solid $color-gray-100;
   width: 260px;
+  border: 1px solid $color-gray-100;
 
   @media (min-width: 510px) {
-    width: 100%;
     display: grid;
+    width: 100%;
+    margin: 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, max-content);
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr;
     width: 316px;
+    grid-template-columns: 1fr;
   }
 }
 
 .products__link {
   &--image {
-    grid-row: 1/-1;
     width: 260px;
+    grid-row: 1/-1;
 
     @media (min-width: $tablet-width) {
       width: 334px;
