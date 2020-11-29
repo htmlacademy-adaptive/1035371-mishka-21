@@ -1,5 +1,9 @@
 .development-process {
   border: 1px solid $color-gray-100;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
 }
 
 .development-process__heading {
@@ -7,24 +11,51 @@
   font-weight: 700;
   line-height: 24px;
   margin: 0 34px 0 91px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 107px;
+    margin-right: 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .development-process__description {
   font-size: 13px;
   line-height: 24px;
-  color: $color-gray-500;
   margin: 0 34px;
+  color: $color-gray-500;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 .development-process__order {
+  margin: 0 34px 33px 34px;
   padding: 18px 11px;
   background-color: $transparent;
   box-shadow: none;
-  margin: 0 34px 33px 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 .development-process__visualisation {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.development-process__video {
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
 }
 
 .development-process__button {

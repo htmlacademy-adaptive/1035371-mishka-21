@@ -72,4 +72,8 @@
 .page-main__catalog-wrapper {
   padding: 0 30px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
