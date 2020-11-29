@@ -15,10 +15,6 @@
   }
 
   &--customer-contacts {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
     @media (min-width: 600px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -31,10 +27,6 @@
   }
 
   &--customer-name {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
     @media (min-width: $desktop-width) {
       grid-column: 2/3;
     }
