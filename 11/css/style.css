@@ -221,12 +221,10 @@ img {
 
 .form__wrapper--transparent {
   display: grid;
-  padding: 0 50px;
-  background-color: transparent;
-  grid-template-rows: repeat(2, -webkit-max-content);
-  grid-template-rows: repeat(2, max-content); }
+  background-color: transparent; }
   @media (min-width: 768px) {
     .form__wrapper--transparent {
+      padding: 0 50px;
       grid-template-columns: 1fr 1fr; } }
   @media (min-width: 1150px) {
     .form__wrapper--transparent {
@@ -294,25 +292,17 @@ img {
   @media (min-width: 1150px) {
     .input-list--color {
       grid-template-columns: 1fr 1fr 1fr; } }
-  .input-list--customer-contacts {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    @media (min-width: 600px) {
-      .input-list--customer-contacts {
-        display: grid;
-        grid-template-columns: 1fr 1fr; } }
-    @media (min-width: 768px) {
-      .input-list--customer-contacts {
-        display: block;
-        grid-column: 1/-1; } }
-  .input-list--customer-name {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    @media (min-width: 1150px) {
-      .input-list--customer-name {
-        grid-column: 2/3; } }
+  @media (min-width: 600px) {
+    .input-list--customer-contacts {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 768px) {
+    .input-list--customer-contacts {
+      display: block;
+      grid-column: 1/-1; } }
+  @media (min-width: 1150px) {
+    .input-list--customer-name {
+      grid-column: 2/3; } }
 
 .input-list__item {
   margin-bottom: 23px; }
