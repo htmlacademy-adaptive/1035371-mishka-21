@@ -1,26 +1,40 @@
 .products__list {
-  margin: 0;
+  max-width: 260px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+
+  @media (min-width: 590px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .products__item {
+  margin: 0 auto;
   border: 1px solid $color-gray-100;
+
+  @media (min-width: 590px) {
+    margin: 0;
+  }
 }
 
 .products__name {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  color: $color-black;
   margin: 0 28px;
+  color: $color-black;
 }
 
 .products__description {
   font-size: 13px;
   line-height: 30px;
-  color: $color-gray-500;
   margin: 0 28px;
+  color: $color-gray-500;
 }
 
 .products__price {
