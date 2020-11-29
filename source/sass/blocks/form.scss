@@ -18,11 +18,10 @@
 
   &--transparent {
     display: grid;
-    padding: 0 50px;
     background-color: $transparent;
-    grid-template-rows: repeat(2, max-content);
 
     @media (min-width: $tablet-width) {
+      padding: 0 50px;
       grid-template-columns: 1fr 1fr;
     }
 
@@ -32,11 +31,6 @@
       grid-template-columns: 1fr 2fr 2fr 1fr;
     }
   }
-}
-
-.form__fields {
-  //display: grid;
-  //grid-template-columns: 1fr 1fr;
 }
 
 
