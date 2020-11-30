@@ -45,7 +45,7 @@
 
 .products__image {
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     //Я пока так оставляю. Мы ведь потом будем как-то через picture картинки вставлять вроде.
