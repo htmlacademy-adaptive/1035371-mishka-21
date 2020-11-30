@@ -46,8 +46,8 @@
     <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
       свяжемся с вами, чтобы уточнить детали.</p>
     <form class="form__fields" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form-group form-group--type">
-        <legend class="form-group__heading">Тип</legend>
+      <section class="form-group form-group--type">
+        <h3 class="form-group__heading">Тип</h3>
         <ul class="input-list input-list--type">
           <li class="input-list__item input-radio">
             <input class="input-radio__field" type="radio" name="accessory" id="input-accessory" value="accessory" checked>
@@ -59,10 +59,10 @@
             <label class="input-radio__label" for="input-toy">Детская игрушка</label>
           </li>
         </ul>
-      </fieldset>
+      </section>
       <div class="form__wrapper">
-        <fieldset class="form-group form-group--color">
-          <legend class="form-group__heading">Цвет</legend>
+        <section class="form-group form-group--color">
+          <h3 class="form-group__heading">Цвет</h3>
           <ul class="input-list input-list--color">
             <li class="input-list__item input-checkbox">
               <input class="input-list__checkbox input-checkbox__field" type="checkbox" name="white" id="color-white" checked>
@@ -89,12 +89,12 @@
               <label class="input-list__label input-checkbox__label" for="color-orange">Оранжевый</label>
             </li>
           </ul>
-        </fieldset>
+        </section>
       </div>
-      <fieldset class="form-group form-group--customer-name">
-        <legend class="visually-hidden">Контакты покупателя</legend>
-        <p class="form-group__heading">ФИО</p>
-        <ul class="input-list--customer-name">
+      <section class="form-group form-group--customer-name">
+        <h3 class="visually-hidden">Контакты покупателя</h3>
+        <h4 class="form-group__heading">ФИО</h4>
+        <ul class="input-list input-list--customer-name">
           <li class="text-input text-input--name">
             <label class="text-input__label" for="name-input">Имя:</label>
             <input class="text-input__field" type="text" id="name-input" placeholder="Введите ваше имя*">
@@ -108,10 +108,10 @@
             <input class="text-input__field " type="text" id="patronymic-input" placeholder="Отчество, если желаете">
           </li>
         </ul>
-      </fieldset>
+      </section>
       <div class="form__wrapper">
-        <fieldset class="form-group form-group--customer-contacts">
-          <ul class="input-list--customer-contacts">
+        <section class="form-group form-group--customer-contacts">
+          <ul class="input-list input-list--customer-contacts">
             <li class="text-input text-input--contacts">
               <label class="form-group__heading" for="tel-input">Тел</label>
               <input class="text-input__field" type="tel" id="tel-input" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
@@ -121,13 +121,13 @@
               <input class="text-input__field" type="email" id="email-input" placeholder="Ваш Email*">
             </li>
           </ul>
-        </fieldset>
+        </section>
       </div>
-      <div class="form-group form-group--more text-input text-input--more">
+      <section class="form-group form-group--more text-input text-input--more">
         <label class="form-group__heading" for="message">Доп</label>
         <textarea class="text-input__field" name="customer-message" id="message"
                   placeholder="Опишите все ваши пожелания к заказу"></textarea>
-      </div>
+      </section>
       <div class="form__wrapper form__wrapper--transparent">
         <small class="form__clarification">*Поля обязательны для заполнения</small>
         <button class="form__button button" type="submit">Отправить заказ</button>
