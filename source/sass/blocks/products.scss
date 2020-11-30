@@ -1,28 +1,133 @@
 .products__list {
-  margin: 0;
+  display: grid;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  grid-row-gap: 30px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 51px;
+  }
 }
 
 .products__item {
   border: 1px solid $color-gray-100;
+
+  @media (min-width: 450px) {
+    display: grid;
+    width: auto;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, max-content);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+}
+
+
+.products__link-image {
+  display: flex;
+  margin-bottom: 28px;
+  grid-row: 1/-1;
+
+  @media (min-width: 450px) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.products__image {
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    //Я пока так оставляю. Мы ведь потом будем как-то через picture картинки вставлять вроде.
+    min-width: 334px;
+    min-height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //Я пока так оставляю. Мы ведь потом будем как-то через picture картинки вставлять вроде.
+    min-width: 316px;
+    min-height: 462px;
+  }
+}
+
+.products__title {
+  display: flex;
+  margin: 0 28px 8px 28px;
+
+  @media (min-width: 450px) {
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
 }
 
 .products__name {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .products__description {
   font-size: 13px;
   line-height: 30px;
+  margin: 0 28px 41px 28px;
   color: $color-gray-500;
+
+  @media (min-width: 450px) {
+    line-height: 15px;
+    margin-bottom: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .products__price {
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0 28px 28px 28px;
+
+  @media (min-width: 450px) {
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
