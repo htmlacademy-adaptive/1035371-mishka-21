@@ -16,7 +16,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  margin: 0 34px 0 91px;
+  margin: 0 34px 21px 91px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -33,7 +33,7 @@
 .development-process__description {
   font-size: 13px;
   line-height: 24px;
-  margin: 0 34px;
+  margin: 0 34px 40px;
   color: $color-gray-500;
 
   @media (min-width: $tablet-width) {
@@ -60,8 +60,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: auto;
     margin-right: auto;
-    margin-bottom: auto;
     margin-left: 0;
     padding: 18px 45px;
   }
@@ -69,24 +69,30 @@
 
 .development-process__visualisation {
   position: relative;
+  display: flex;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     order: -1;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 0;
     grid-row: 1/-1;
   }
 }
 
 .development-process__video {
+  width: 100%;
+  object-fit: contain;
+
   @media (min-width: $tablet-width) {
-    width: 668px;
+    min-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 682px;
-    height: 455px;
+    min-width: 682px;
+    min-height: 455px;
   }
 }
 
