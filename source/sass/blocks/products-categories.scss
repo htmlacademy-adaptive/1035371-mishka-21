@@ -34,14 +34,6 @@
 
   &--interior {
     background-color: $color-green-200;
-
-    //&::after {
-    //  position: absolute;
-    //  width: 40px;
-    //  height: 62px;
-    //  content: "";
-    //  background-image: url("../img/interior.svg");
-    //}
   }
 
   &--toys {
@@ -67,21 +59,21 @@
 
   &--interior::after {
     position: absolute;
+    top: 20px;
+    right: 30px;
     width: 40px;
     height: 62px;
     content: "";
     background-image: url("../img/interior.svg");
-    right: 30px;
-    top: 20px;
   }
 
   &--toys::after {
     position: absolute;
+    top: 20px;
+    right: 20px;
     width: 60px;
     height: 60px;
     content: "";
     background-image: url("../img/toy.svg");
-    right: 20px;
-    top: 20px;
   }
 }
