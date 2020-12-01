@@ -14,10 +14,10 @@
 
 .about-us__list {
   display: grid;
-  grid-row-gap: 83px;
   margin: 83px 0 0;
   padding: 0;
   list-style: none;
+  grid-row-gap: 83px;
 
   @media (min-width: 550px) {
     display: grid;
@@ -42,10 +42,10 @@
 }
 
 .about-us__item {
-  position: relative;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
+  position: relative;
 
   &:nth-child(2n) {
     order: 1;
@@ -65,69 +65,69 @@
   }
 
   &--materials::before {
-    content: "";
-    background-image: url("../img/flower.svg");
-    background-repeat: no-repeat;
     position: absolute;
     top: -60px;
     left: 5px;
-    height: 38px;
     width: 33px;
+    height: 38px;
+    content: "";
+    background-image: url("../img/flower.svg");
+    background-repeat: no-repeat;
   }
 
   &--handmade::before {
-    content: "";
-    background-image: url("../img/clew.svg");
-    background-repeat: no-repeat;
     position: absolute;
     top: -57px;
     left: 5px;
-    height: 35px;
     width: 35px;
+    height: 35px;
+    content: "";
+    background-image: url("../img/clew.svg");
+    background-repeat: no-repeat;
   }
 
   &--price::before {
+    position: absolute;
+    top: -50px;
+    left: 5px;
+    width: 47px;
+    height: 27px;
     content: "";
     background-image: url("../img/money.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    top: -50px;
-    left: 5px;
-    height: 27px;
-    width: 47px;
   }
 
   &--homeland::before {
+    position: absolute;
+    top: -50px;
+    left: 5px;
+    width: 55px;
+    height: 23px;
     content: "";
     background-image: url("../img/rocket.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    top: -50px;
-    left: 5px;
-    height: 23px;
-    width: 55px;
   }
 
   &--likes::before {
+    position: absolute;
+    top: -50px;
+    left: 5px;
+    width: 34px;
+    height: 27px;
     content: "";
     background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    top: -50px;
-    left: 5px;
-    height: 27px;
-    width: 34px;
   }
 
   &--present::before {
-    content: "";
-    background-image: url("../img/present.svg");
-    background-repeat: no-repeat;
     position: absolute;
     top: -50px;
     left: 5px;
-    height: 33px;
     width: 33px;
+    height: 33px;
+    content: "";
+    background-image: url("../img/present.svg");
+    background-repeat: no-repeat;
   }
 }
 

@@ -47,6 +47,7 @@
 }
 
 .main-nav__link {
+  position: relative;
   display: block;
   padding: 27px 30px 27px 76px;
   color: $color-black;
@@ -65,11 +66,41 @@
   &--search {
     order: 3;
     color: $color-black;
+
+    &::before {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 18px;
+      height: 18px;
+      content: "";
+      background-image: url("../img/search.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        left: -65px;
+      }
+    }
   }
 
   &--cart {
     order: 4;
     color: $color-black;
+
+    &::before {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 21px;
+      height: 18px;
+      content: "";
+      background-image: url("../img/cart.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        left: 0;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
