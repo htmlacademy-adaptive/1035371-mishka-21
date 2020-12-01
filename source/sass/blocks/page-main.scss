@@ -1,5 +1,18 @@
 .page-main__wrapper {
   background-color: $color-gray-200;
+  //todo разобраться с фоновым изображением
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center -20px;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-image.jpg");
+  }
+
+  //@media (min-width: $desktop-width) {
+  //
+  //}
 }
 
 .page-main__title {
@@ -40,7 +53,6 @@
   padding-right: 30px;
   padding-left: 30px;
   text-align: center;
-  background-color: $color-gray-200;
 
   &--index {
     padding-top: 72px;

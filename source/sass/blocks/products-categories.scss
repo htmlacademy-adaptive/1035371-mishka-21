@@ -28,11 +28,20 @@
 
 .products-categories__item {
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 50%;
   }
 
   &--interior {
     background-color: $color-green-200;
+
+    //&::after {
+    //  position: absolute;
+    //  width: 40px;
+    //  height: 62px;
+    //  content: "";
+    //  background-image: url("../img/interior.svg");
+    //}
   }
 
   &--toys {
@@ -41,6 +50,7 @@
 }
 
 .products-categories__link {
+  position: relative;
   display: block;
   padding-top: 24px;
   padding-bottom: 31px;
@@ -53,5 +63,25 @@
     padding-top: 25px;
     padding-bottom: 24px;
     padding-left: 36px;
+  }
+
+  &--interior::after {
+    position: absolute;
+    width: 40px;
+    height: 62px;
+    content: "";
+    background-image: url("../img/interior.svg");
+    right: 30px;
+    top: 20px;
+  }
+
+  &--toys::after {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-image: url("../img/toy.svg");
+    right: 20px;
+    top: 20px;
   }
 }
