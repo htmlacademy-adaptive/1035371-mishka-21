@@ -57,23 +57,23 @@
     padding-left: 36px;
   }
 
-  &--interior::after {
+  &::after {
     position: absolute;
+    content: "";
     top: 20px;
+  }
+
+  &--interior::after {
     right: 30px;
     width: 40px;
     height: 62px;
-    content: "";
     background-image: url("../img/interior.svg");
   }
 
   &--toys::after {
-    position: absolute;
-    top: 20px;
     right: 20px;
     width: 60px;
     height: 60px;
-    content: "";
     background-image: url("../img/toy.svg");
   }
 }
