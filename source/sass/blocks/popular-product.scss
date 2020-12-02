@@ -97,6 +97,7 @@
 .popular-product__image {
   display: block;
   margin: 0 auto;
+  width: 100%;
 
   @media (min-width: 560px) {
     width: 100%;
