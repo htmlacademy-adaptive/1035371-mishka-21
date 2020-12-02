@@ -12,7 +12,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-image.jpg");
-    background-size: 100%;
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-image@2x.jpg");
