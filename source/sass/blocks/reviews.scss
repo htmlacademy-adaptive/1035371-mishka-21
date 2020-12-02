@@ -1,5 +1,9 @@
-.reviews {
+.reviews__wrapper {
+  position: relative;
+  padding: 0 30px;
+
   @media (min-width: $tablet-width) {
+    padding: 82px 50px 0;
     background-image: url("../img/review-bg.jpg");
     background-repeat: no-repeat;
     background-position: center left;
@@ -9,21 +13,13 @@
       background-image: url("../img/review-bg@2x.jpg");
     }
   }
-}
-
-.reviews__wrapper {
-  position: relative;
-  padding: 0 30px;
-
-  @media (min-width: $tablet-width) {
-    padding: 82px 50px 0;
-  }
 
   @media (min-width: $desktop-width) {
     max-width: 1150px;
     margin: 0 auto;
     padding-top: 78px;
     padding-left: 225px;
+    background-position-x: 50px;
   }
 }
 
