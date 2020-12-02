@@ -12,6 +12,7 @@
 }
 
 .products__item {
+  position: relative;
   border: 1px solid $color-gray-100;
 
   @media (min-width: 450px) {
@@ -25,6 +26,29 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr;
     grid-template-rows: none;
+  }
+
+  &::after {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 21px;
+    height: 18px;
+    content: "";
+    background-image: url("../img/cart.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: 450px) {
+      bottom: 12px;
+    }
+
+    @media (min-width: $tablet-width) {
+      bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 30px;
+    }
   }
 }
 
@@ -45,16 +69,14 @@
 
 .products__image {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 
   @media (min-width: $tablet-width) {
-    //Я пока так оставляю. Мы ведь потом будем как-то через picture картинки вставлять вроде.
     min-width: 334px;
     min-height: 334px;
   }
 
   @media (min-width: $desktop-width) {
-    //Я пока так оставляю. Мы ведь потом будем как-то через picture картинки вставлять вроде.
     min-width: 316px;
     min-height: 462px;
   }
