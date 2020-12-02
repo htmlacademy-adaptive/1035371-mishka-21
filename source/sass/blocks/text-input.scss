@@ -6,8 +6,47 @@
     margin-bottom: 22px;
   }
 
-  &--contacts {
+  &--phone {
     margin-bottom: 35px;
+
+    &::after {
+      content: "";
+      background-image: url("../img/phone.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 24px;
+      height: 25px;
+      right: 0;
+      top: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 4fr 1fr;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--email {
+    margin-bottom: 35px;
+
+    &::after {
+      content: "";
+      background-image: url("../img/mail.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 32px;
+      height: 21px;
+      right: 0;
+      bottom: 0;
+    }
 
     @media (min-width: $tablet-width) {
       display: grid;
@@ -36,3 +75,4 @@
     font-size: 19px;
   }
 }
+
