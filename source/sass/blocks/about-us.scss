@@ -64,70 +64,53 @@
     line-height: 22px;
   }
 
-  &--materials::before {
+  &::before {
     position: absolute;
-    top: -60px;
     left: 5px;
+    content: "";
+    background-repeat: no-repeat;
+  }
+
+  &--materials::before {
+    top: -60px;
     width: 33px;
     height: 38px;
-    content: "";
     background-image: url("../img/flower.svg");
-    background-repeat: no-repeat;
   }
 
   &--handmade::before {
-    position: absolute;
     top: -57px;
-    left: 5px;
     width: 35px;
     height: 35px;
-    content: "";
     background-image: url("../img/clew.svg");
-    background-repeat: no-repeat;
   }
 
   &--price::before {
-    position: absolute;
     top: -50px;
-    left: 5px;
     width: 47px;
     height: 27px;
-    content: "";
     background-image: url("../img/money.svg");
-    background-repeat: no-repeat;
   }
 
   &--homeland::before {
-    position: absolute;
     top: -50px;
-    left: 5px;
     width: 55px;
     height: 23px;
-    content: "";
     background-image: url("../img/rocket.svg");
-    background-repeat: no-repeat;
   }
 
   &--likes::before {
-    position: absolute;
     top: -50px;
-    left: 5px;
     width: 34px;
     height: 27px;
-    content: "";
     background-image: url("../img/heart.svg");
-    background-repeat: no-repeat;
   }
 
   &--present::before {
-    position: absolute;
     top: -50px;
-    left: 5px;
     width: 33px;
     height: 33px;
-    content: "";
     background-image: url("../img/present.svg");
-    background-repeat: no-repeat;
   }
 }
 
