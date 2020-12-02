@@ -3,9 +3,25 @@
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: grid;
     padding: 0 50px;
     grid-template-rows: repeat(4, max-content);
+
+    &::after {
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      width: 47px;
+      height: 81px;
+      content: "";
+      background-image: url("../img/flag.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $desktop-width) {
+        left: 50px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {

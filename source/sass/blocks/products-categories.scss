@@ -28,6 +28,7 @@
 
 .products-categories__item {
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 50%;
   }
 
@@ -41,6 +42,7 @@
 }
 
 .products-categories__link {
+  position: relative;
   display: block;
   padding-top: 24px;
   padding-bottom: 31px;
@@ -53,5 +55,25 @@
     padding-top: 25px;
     padding-bottom: 24px;
     padding-left: 36px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 20px;
+    content: "";
+  }
+
+  &--interior::after {
+    right: 30px;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/interior.svg");
+  }
+
+  &--toys::after {
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/toy.svg");
   }
 }
