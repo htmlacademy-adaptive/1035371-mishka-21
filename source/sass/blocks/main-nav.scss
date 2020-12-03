@@ -23,16 +23,55 @@
 
 .main-nav__toggle {
   position: absolute;
+  top: 13px;
+  right: 40px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
   border: none;
   background-color: $transparent;
   box-shadow: none;
+}
 
-  &--open {
-    display: none;
+.main-nav--closed .main-nav__toggle::before {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  content: "";
+  background-color: $color-gray-600;
+  box-shadow: 0 8px 0 0 $color-gray-600, 0 16px 0 0 $color-gray-600;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 13px;
+  right: 40px;
+  height: 30px;
+  width: 30px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 26px;
+    height: 2px;
+    background-color: $color-gray-600;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
 .main-nav__logo {
+  display: block;
   margin-bottom: 22px;
   text-align: center;
 
