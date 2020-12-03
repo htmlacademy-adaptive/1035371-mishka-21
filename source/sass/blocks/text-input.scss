@@ -9,17 +9,6 @@
   &--phone {
     margin-bottom: 35px;
 
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 24px;
-      height: 25px;
-      content: "";
-      background-image: url("../img/phone.svg");
-      background-repeat: no-repeat;
-    }
-
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 3fr;
@@ -36,17 +25,6 @@
 
   &--email {
     margin-bottom: 35px;
-
-    &::after {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 32px;
-      height: 21px;
-      content: "";
-      background-image: url("../img/mail.svg");
-      background-repeat: no-repeat;
-    }
 
     @media (min-width: $tablet-width) {
       display: grid;
@@ -69,5 +47,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
+  }
+}
+
+.text-input__icon {
+  &--email {
+    fill: $color-black;
   }
 }
