@@ -16,6 +16,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  position: relative;
   margin: 0 34px 21px 91px;
 
   @media (min-width: $tablet-width) {
@@ -27,6 +28,20 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: 40%;
+    left: -60px;
+    width: 32px;
+    height: 22px;
+    content: "";
+    border: none;
+    background-color: $transparent;
+    background-image: url("../img/video.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -98,4 +113,15 @@
 
 .development-process__button {
   position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+  margin: auto;
+  padding: 38px 51px;
+  border: none;
+  background-color: $transparent;
+  background-image: url("../img/play.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
