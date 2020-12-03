@@ -2,7 +2,7 @@
   background-color: $color-gray-150;
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -18px;
   background-size: 320px;
 
 
@@ -28,7 +28,7 @@
   &--index {
     max-width: 350px;
     margin: 0 auto;
-    padding-bottom: 140px;
+    padding-bottom: 120px;
 
     @media (min-width: $tablet-width) {
       max-width: 509px;
