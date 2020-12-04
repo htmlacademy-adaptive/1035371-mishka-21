@@ -21,11 +21,17 @@
 
 .popular-product__heading {
   position: relative;
+  margin-bottom: 15px;
 
   @media (min-width: 560px) {
     grid-column: 1/-1;
     grid-row: 1/2;
   }
+}
+
+.popular-product__heading-text {
+  margin-top: 0;
+  margin-bottom: -4px;
 }
 
 .popular-product__label {
@@ -54,6 +60,8 @@
 .popular-product__description {
   font-size: 15px;
   line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 25px;
   color: $color-gray-500;
 
   @media (min-width: 560px) {
@@ -66,6 +74,8 @@
   font-size: 15px;
   line-height: 20px;
   color: $color-gray-500;
+  width: 100%;
+  margin-bottom: 23px;
 }
 
 .popular-product__price {
@@ -73,6 +83,9 @@
   font-weight: 700;
   line-height: 24px;
   color: $color-gray-500;
+  margin-top: 0;
+  margin-bottom: 23px;
+  text-align: center;
 
   @media (min-width: 560px) {
     font-size: 20px;
@@ -80,10 +93,27 @@
   }
 }
 
+//todo не понятно, как стилизовать эту таблицу. border расползается постоянно
+
+.popular-product__item {
+  padding-right: 24px;
+  padding-bottom: 17px;
+  min-width: 95px;
+}
+
+.popular-product__value {
+  padding-bottom: 17px;
+}
+
+.popular-product__row {
+  display: flex;
+  border-bottom: 1px solid $color-gray-100;
+}
+
 .popular-product__order-button {
   display: block;
   margin: 0 auto;
-  padding: 16px 0;
+  padding: 14px 0;
 
   @media (min-width: 560px) {
     font-size: 17px;
@@ -108,7 +138,7 @@
 .popular-product__image {
   display: block;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 27px;
 
   @media (min-width: 560px) {
     width: 100%;
