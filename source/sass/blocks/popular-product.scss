@@ -7,7 +7,6 @@
     max-width: none;
     margin: 0 auto;
     padding: 0 50px;
-    grid-column-gap: 42px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, max-content);
   }
@@ -15,17 +14,21 @@
   @media (min-width: $desktop-width) {
     max-width: 1150px;
     padding-left: 225px;
-    grid-column-gap: 58px;
   }
 }
 
 .popular-product__heading {
   position: relative;
+  margin-top: 0;
   margin-bottom: 15px;
 
   @media (min-width: 560px) {
     grid-column: 1/-1;
     grid-row: 1/2;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
   }
 }
 
@@ -49,6 +52,11 @@
     text-align: center;
   }
 
+  @media (min-width: $tablet-width) {
+    top: 5px;
+    right: 13px;
+  }
+
   @media (min-width: $desktop-width) {
     top: 15px;
     left: -180px;
@@ -68,37 +76,53 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+    margin-bottom: 44px;
+  }
 }
 
 .popular-product__specification {
   font-size: 15px;
   line-height: 20px;
-  color: $color-gray-500;
   width: 100%;
   margin-bottom: 23px;
+  color: $color-gray-500;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-right: 42px;
+    margin-bottom: 54px;
+  }
 }
 
 .popular-product__price {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  color: $color-gray-500;
   margin-top: 0;
   margin-bottom: 23px;
   text-align: center;
+  color: $color-gray-500;
 
   @media (min-width: 560px) {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+    margin-bottom: 31px;
   }
 }
 
 //todo не понятно, как стилизовать эту таблицу. border расползается постоянно
 
 .popular-product__item {
+  min-width: 95px;
   padding-right: 24px;
   padding-bottom: 17px;
-  min-width: 95px;
 }
 
 .popular-product__value {
@@ -122,6 +146,10 @@
     margin-right: 0;
     margin-left: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+  }
 }
 
 .popular-product__image-container {
@@ -144,5 +172,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
