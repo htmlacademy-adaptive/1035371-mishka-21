@@ -59,21 +59,31 @@
 
   &::after {
     position: absolute;
-    top: 23px;
     content: "";
   }
 
   &--interior::after {
-    right: 37px;
+    right: 36px;
+    top: 23px;
     width: 40px;
     height: 62px;
     background-image: url("../img/interior.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+    }
   }
 
   &--toys::after {
+    top: 21px;
     right: 27px;
     width: 60px;
     height: 60px;
     background-image: url("../img/toy.svg");
+
+    @media (min-width: $tablet-width) {
+      right: 33px;
+      top: 32px;
+    }
   }
 }

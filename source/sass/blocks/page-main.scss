@@ -12,11 +12,16 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-image.jpg");
-    background-size: contain;
+    background-size: 150%;
+    background-position-y: top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-image@2x.jpg");
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100%;
   }
 }
 
@@ -28,14 +33,16 @@
   &--index {
     max-width: 350px;
     margin: 0 auto;
-    padding-bottom: 120px;
+    padding-bottom: 119px;
 
     @media (min-width: $tablet-width) {
       max-width: 509px;
+      padding-bottom: 371px;
     }
 
     @media (min-width: $desktop-width) {
       max-width: 700px;
+      padding-bottom: 357px;
     }
   }
 
@@ -79,15 +86,15 @@
   &--catalog {
     margin-bottom: 30px;
     padding-top: 72px;
-  }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 67px;
-    padding-top: 100px;
-  }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 67px;
+      padding-top: 100px;
+    }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 111px;
+    @media (min-width: $desktop-width) {
+      margin-bottom: 111px;
+    }
   }
 }
 
