@@ -22,6 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    //todo исправить на contain
     background-size: 100%;
     margin-bottom: 73px;
   }
@@ -149,4 +150,8 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 89px;
   }
+}
+
+.page-main__reviews {
+  margin-bottom: 89px;
 }
