@@ -126,3 +126,15 @@
     }
   }
 }
+
+.page-main__popular-product {
+  margin-bottom: 73px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 126px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 164px;
+  }
+}
