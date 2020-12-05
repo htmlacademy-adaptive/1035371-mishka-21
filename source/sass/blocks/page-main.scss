@@ -22,8 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    //todo исправить на contain
-    background-size: 100%;
+    background-size: contain;
     margin-bottom: 73px;
   }
 }
