@@ -1,11 +1,11 @@
 .popular-product {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 30px;
 
   @media (min-width: 560px) {
     display: grid;
     max-width: none;
-    margin: 0 auto;
     padding: 0 50px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, max-content);
