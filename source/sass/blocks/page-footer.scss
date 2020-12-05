@@ -16,13 +16,17 @@
     height: 1px;
     content: "";
     background-color: $color-gray-300;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 51px 50px 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,6 +48,10 @@
   margin: 0 0 51px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__social-item {

@@ -165,4 +165,8 @@
 
 .page-main__contacts {
   margin: 0 auto 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
 }
