@@ -153,4 +153,8 @@
 
 .page-main__reviews {
   margin-bottom: 89px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 119px;
+  }
 }
