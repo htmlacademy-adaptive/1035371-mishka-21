@@ -146,6 +146,14 @@
   &--next {
     background-image: url("../img/arrow-next.svg");
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__write-button {
@@ -166,5 +174,14 @@
 
   @media (min-width: $desktop-width) {
     top: 79px;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-gray-500;
+  }
+
+  &:active {
+    color: $color-white-active;
   }
 }

@@ -40,6 +40,14 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  &:hover .page-footer__logo-img {
+    fill: $color-green-400;
+  }
+
+  &:active .page-footer__logo-img {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social-list {
@@ -64,6 +72,14 @@
 
 .page-footer__link {
   padding: 15px;
+
+  &:hover .page-footer__img {
+    fill: $color-green-400;
+  }
+
+  &:active .page-footer__img {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__img {
@@ -79,6 +95,14 @@
   font-weight: 700;
   line-height: 18px;
   color: $color-black;
+
+  &:hover .page-footer__developer-logo {
+    fill: $color-green-400;
+  }
+
+  &:active .page-footer__developer-logo {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__developer-logo {

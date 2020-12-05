@@ -176,6 +176,15 @@
   @media (min-width: $desktop-width) {
     margin-right: 58px;
   }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-gray-500;
+  }
+
+  &:active {
+    color: $color-white-active;
+  }
 }
 
 .popular-product__image-container {

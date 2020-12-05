@@ -38,11 +38,12 @@
 
     //todo как сделать зигзаг тянущимся на дексктопе?
     &::after {
-      background-image: url("../img/zigzag-desktop.svg");
-      height: 34px;
       top: 102px;
-      width: 1150px;
       left: -50px;
+      width: 1150px;
+      height: 34px;
+      background-image: url("../img/zigzag-desktop.svg");
+      background-repeat: repeat-x;
     }
   }
 }

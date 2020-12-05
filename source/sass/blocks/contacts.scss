@@ -97,6 +97,14 @@
 .contacts__link {
   color: $color-gray-500;
   border-bottom: 1px solid $color-green-200;
+
+  &:hover {
+    color: $color-green-400;
+  }
+
+  &:active {
+    border-bottom-color: $color-green-400-active;
+  }
 }
 
 .contacts__location {
