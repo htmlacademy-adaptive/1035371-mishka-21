@@ -3,9 +3,20 @@
 }
 
 .page-footer__wrapper {
+  position: relative;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 25px 30px 12px;
   text-align: center;
+
+  &::after {
+    position: absolute;
+    width: calc(100% - 60px);
+    left: 30px;
+    top: 80px;
+    height: 1px;
+    content: "";
+    background-color: $color-gray-300;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -30,9 +41,29 @@
 .page-footer__social-list {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 0 0 51px;
   padding: 0;
   list-style: none;
+}
+
+.page-footer__social-item {
+  margin-right: 11px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.page-footer__link {
+  padding: 15px;
+}
+
+.page-footer__img {
+  vertical-align: middle;
+}
+
+.page-footer__text {
+  margin-right: 20px;
 }
 
 .page-footer__developer-label {
@@ -45,5 +76,6 @@
 .page-footer__developer-logo {
   width: 27px;
   height: 34px;
+  vertical-align: middle;
   fill: $color-green-200;
 }

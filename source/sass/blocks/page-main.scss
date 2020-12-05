@@ -157,4 +157,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 119px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 127px;
+  }
+}
+
+.page-main__contacts {
+  margin: 0 auto 39px;
 }
