@@ -11,11 +11,9 @@
 .offers-list__link {
   font-size: 15px;
   line-height: 24px;
-}
 
-.offers-list__link {
   @media (min-width: $desktop-width) {
-    padding-left: 0;
     padding-top: 17px;
+    padding-left: 0;
   }
 }

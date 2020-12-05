@@ -14,10 +14,10 @@
 
 .about-us__list {
   display: grid;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
   grid-row-gap: 83px;
-  margin-bottom: 0;
 
   @media (min-width: 550px) {
     display: grid;

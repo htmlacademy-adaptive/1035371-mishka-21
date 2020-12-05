@@ -77,8 +77,8 @@
 
 .main-nav__logo {
   margin-bottom: 16px;
-  text-align: center;
   padding-top: 23px;
+  text-align: center;
 
   &:hover {
     opacity: 0.6;
@@ -104,8 +104,8 @@
 
 .main-nav__link {
   position: relative;
-  padding: 27px 30px 27px 76px;
   display: block;
+  padding: 27px 30px 27px 76px;
   color: $color-black;
   border-bottom: 1px solid $color-gray-100;
 
@@ -127,13 +127,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    border: none;
     padding-right: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    border: none;
     font-size: 17px;
+    border: none;
   }
 
   &--search {
@@ -227,8 +227,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 4/5;
     margin: 16px 0;
+    grid-column: 4/5;
   }
 }
 
