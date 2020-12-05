@@ -48,11 +48,9 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 100px;
   }
 
   &--shown {
@@ -113,13 +111,9 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 50px;
-    bottom: 84px;
+    bottom: 0;
     width: 176px;
     margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    bottom: 132px;
   }
 }
 
