@@ -63,12 +63,14 @@
     font-size: 17px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 18px;
+    justify-content: space-between;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
+    margin-right: 25px;
   }
 }
 
@@ -77,11 +79,21 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    margin-right: 38px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+
+    &:last-child {
+      margin-bottom: auto;
+    }
   }
 }
 
