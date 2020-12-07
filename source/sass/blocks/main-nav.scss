@@ -48,6 +48,7 @@
   box-shadow: 0 8px 0 0 $color-gray-600, 0 16px 0 0 $color-gray-600;
 }
 
+.main-nav--nojs .main-nav__toggle,
 .main-nav--opened .main-nav__toggle {
   top: 14px;
   right: 41px;
