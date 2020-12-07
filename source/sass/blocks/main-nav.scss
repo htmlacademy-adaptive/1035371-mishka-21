@@ -50,16 +50,18 @@
 
 .main-nav--nojs .main-nav__toggle,
 .main-nav--opened .main-nav__toggle {
-  top: 14px;
-  right: 41px;
+  top: 23px;
+  right: 26px;
   width: 30px;
   height: 30px;
 
   &::before,
   &::after {
     position: absolute;
-    top: 24px;
-    left: 18px;
+    //top: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     width: 26px;
     height: 2px;
     content: "";
