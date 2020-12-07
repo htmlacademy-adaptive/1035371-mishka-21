@@ -151,6 +151,10 @@
       border-left: 1px solid $color-gray-200;
       background-repeat: no-repeat;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 70px;
+    }
   }
 
   &--cart {
@@ -212,7 +216,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: 90px;
+      margin: 0 auto;
     }
   }
 }
