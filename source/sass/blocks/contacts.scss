@@ -103,7 +103,7 @@
   }
 
   &:active {
-    border-bottom-color: $color-green-400-active;
+    border-bottom-color: rgba($color-green-400, 0.1);
   }
 }
 

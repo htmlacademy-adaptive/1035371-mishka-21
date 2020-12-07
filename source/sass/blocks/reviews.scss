@@ -182,6 +182,6 @@
   }
 
   &:active {
-    color: $color-white-active;
+    color: rgba($color-white, 0.3);
   }
 }
