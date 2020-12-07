@@ -55,6 +55,10 @@
     padding-top: 25px;
     padding-bottom: 32px;
     padding-left: 36px;
+
+    &:hover {
+      margin-top: -5px;
+    }
   }
 
   &::after {
