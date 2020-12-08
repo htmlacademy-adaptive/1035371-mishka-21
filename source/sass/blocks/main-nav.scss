@@ -229,6 +229,7 @@
   display: none;
   text-align: right;
   color: $color-gray-500;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -247,6 +248,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  z-index: 1;
 
   &--offers {
     display: none;
