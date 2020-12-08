@@ -30,6 +30,14 @@
   @media (min-width: $tablet-width) {
     position: relative;
     width: 50%;
+
+    &:hover {
+      transform: translateY(-5px);
+
+      & .products-categories__link::after {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--interior {
@@ -53,12 +61,8 @@
     font-size: 20px;
     line-height: 30px;
     padding-top: 25px;
-    padding-bottom: 32px;
+    padding-bottom: 37px;
     padding-left: 36px;
-
-    &:hover {
-      margin-top: -5px;
-    }
   }
 
   &::after {
