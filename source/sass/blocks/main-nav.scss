@@ -48,7 +48,6 @@
   box-shadow: 0 8px 0 0 $color-gray-600, 0 16px 0 0 $color-gray-600;
 }
 
-.main-nav--nojs .main-nav__toggle,
 .main-nav--opened .main-nav__toggle {
   top: 23px;
   right: 26px;
@@ -76,6 +75,10 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 .main-nav__logo {
