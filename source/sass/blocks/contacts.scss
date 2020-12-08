@@ -153,4 +153,13 @@
     margin-top: auto;
     margin-left: 0;
   }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-gray-500;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
 }
