@@ -4,14 +4,14 @@
 
 .page-footer__wrapper {
   margin: 0 auto;
-  padding: 25px 30px 22px;
+  padding: 12px 30px 22px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 51px 50px 51px;
+    padding: 37px 50px 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +24,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin: auto 0;
   }
 
   &:hover .page-footer__logo-img {
@@ -39,13 +40,14 @@
   display: flex;
   justify-content: center;
   margin: 0 0 23px;
-  padding: 0 0 27px;
+  padding: 0 0 11px;
   list-style: none;
   border-bottom: 1px solid $color-gray-300;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     border: none;
+    padding: 0;
   }
 }
 
@@ -59,6 +61,7 @@
 
 .page-footer__link {
   padding: 15px;
+  display: block;
 
   &:hover .page-footer__img {
     fill: $color-green-400;
@@ -84,19 +87,10 @@
   position: relative;
   color: $color-black;
 
-  //&::before {
-  //  position: absolute;
-  //  top: -26px;
-  //  left: -40px;
-  //  width: calc(100vw - 60px);
-  //  height: 1px;
-  //  content: "";
-  //  background-color: $color-gray-300;
-  //
-  //  @media (min-width: $tablet-width) {
-  //    display: none;
-  //  }
-  //}
+  @media (min-width: $tablet-width){
+    margin: auto 0;
+    display: block;
+  }
 
   &:hover .page-footer__developer-logo {
     fill: $color-green-400;
