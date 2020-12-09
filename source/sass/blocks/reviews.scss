@@ -21,6 +21,33 @@
     padding-left: 225px;
     background-position-x: 50px;
   }
+
+  &::after {
+    position: absolute;
+    bottom: -51px;
+    width: 100%;
+    left: -0;
+    height: 6px;
+    content: "";
+    background-image: url("../img/zigzag-divider-mobile.svg");
+    background-repeat: repeat-x;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      bottom: -50px;
+      height: 17px;
+      background-image: url("../img/zigzag-divider-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 50px;
+      bottom: -57px;
+      left: 50px;
+      width: 1050px;
+      height: 23px;
+      background-image: url("../img/zigzag-divider-desktop.svg");
+    }
+  }
 }
 
 .reviews__heading {
