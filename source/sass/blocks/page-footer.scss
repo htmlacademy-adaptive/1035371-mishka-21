@@ -46,8 +46,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    border: none;
     padding: 0;
+    border: none;
   }
 }
 
@@ -60,8 +60,8 @@
 }
 
 .page-footer__link {
-  padding: 15px;
   display: block;
+  padding: 15px;
 
   &:hover .page-footer__img {
     fill: $color-green-400;
@@ -87,9 +87,9 @@
   position: relative;
   color: $color-black;
 
-  @media (min-width: $tablet-width){
-    margin: auto 0;
+  @media (min-width: $tablet-width) {
     display: block;
+    margin: auto 0;
   }
 
   &:hover .page-footer__developer-logo {

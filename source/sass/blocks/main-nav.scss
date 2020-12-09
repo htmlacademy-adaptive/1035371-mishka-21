@@ -225,10 +225,10 @@
 
 .main-nav__delivery {
   font-size: 15px;
+  z-index: 1;
   display: none;
   text-align: right;
   color: $color-gray-500;
-  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -243,11 +243,11 @@
 }
 
 .main-nav__list {
+  z-index: 1;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
-  z-index: 1;
 
   &--offers {
     display: none;

@@ -14,11 +14,11 @@
 
 .about-us__list {
   display: grid;
+  margin-top: 0;
   margin-bottom: 0;
   padding: 0;
   list-style: none;
   grid-row-gap: 16px;
-  margin-top: 0;
 
   @media (min-width: 550px) {
     display: grid;
@@ -27,10 +27,10 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
+    padding-right: 35px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, max-content);
     grid-row-gap: 43px;
-    padding-right: 35px;
     grid-column-gap: 35px;
   }
 
