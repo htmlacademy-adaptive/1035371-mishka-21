@@ -7,14 +7,16 @@
     display: grid;
     max-width: none;
     padding: 0 50px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 50%;
     grid-template-rows: repeat(5, max-content);
+    grid-column-gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1150px;
     padding-left: 225px;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 525px;
+    grid-column-gap: 58px;
   }
 }
 
@@ -85,12 +87,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 42px;
     margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 58px;
     margin-bottom: 40px;
   }
 }
@@ -104,12 +104,10 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    margin-right: 42px;
     margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 58px;
     margin-bottom: 89px;
   }
 }
@@ -129,12 +127,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 42px;
     margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 58px;
     margin-bottom: 0;
   }
 }
@@ -165,14 +161,6 @@
     margin-top: auto;
     margin-right: 0;
     margin-left: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-right: 42px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 58px;
   }
 
   &:hover {
