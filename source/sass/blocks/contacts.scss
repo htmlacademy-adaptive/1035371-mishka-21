@@ -79,7 +79,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 38px;
+    margin-right: 41px;
   }
 
   &:last-child {
@@ -100,6 +100,10 @@
 .contacts__item {
   margin-right: 32px;
   text-transform: lowercase;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
 }
 
 .contacts__description {
