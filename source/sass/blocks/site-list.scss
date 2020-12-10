@@ -1,9 +1,25 @@
 .site-list__item {
   @media (min-width: $tablet-width) {
-    margin-right: 36px;
+    font-size: 15px;
+    margin-right: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 41px;
+    margin-right: 71px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.site-list__link {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 22px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 34px 0;
   }
 }

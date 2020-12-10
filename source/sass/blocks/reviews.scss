@@ -6,8 +6,8 @@
     padding: 82px 50px 0;
     background-image: url("../img/review-bg.jpg");
     background-repeat: no-repeat;
-    background-position: center left;
-    background-size: auto 100%;
+    background-position: top left;
+    background-size: auto 93%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review-bg@2x.jpg");
@@ -20,6 +20,46 @@
     padding-top: 78px;
     padding-left: 225px;
     background-position-x: 50px;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -51px;
+    left: -0;
+    width: 100%;
+    height: 6px;
+    content: "";
+    background-image: url("../img/zigzag-divider-mobile.svg");
+    background-repeat: repeat-x;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      bottom: -50px;
+      height: 17px;
+      background-image: url("../img/zigzag-divider-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 50px;
+      bottom: -57px;
+      left: 50px;
+      width: 1050px;
+      height: 23px;
+      background-image: url("../img/zigzag-divider-desktop.svg");
+    }
+  }
+}
+
+.reviews__heading {
+  margin-top: 0;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
   }
 }
 
@@ -50,17 +90,30 @@
 .reviews__text {
   font-size: 15px;
   line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 34px;
   color: $color-gray-500;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+    margin-bottom: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
+}
+
+.reviews__author-contacts {
+  margin-bottom: 28px;
 }
 
 .reviews__author-name {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  display: block;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -82,18 +135,25 @@
 .reviews__navigation {
   display: flex;
   width: 100%;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 50px;
-    bottom: 120px;
+    bottom: 84px;
     width: 176px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 132px;
   }
 }
 
 .reviews__button {
   flex-grow: 1;
   padding: 26px;
+  border: 1px solid $color-gray-100;
   outline: none;
   background-color: $transparent;
   background-repeat: no-repeat;
@@ -106,17 +166,26 @@
   }
 
   &--prev {
+    border-right: 0;
     background-image: url("../img/arrow-prev.svg");
   }
 
   &--next {
     background-image: url("../img/arrow-next.svg");
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__write-button {
   display: block;
-  padding: 16px;
+  padding: 14px;
   border: 2px solid $color-gray-500;
   background-color: $transparent;
   box-shadow: none;
@@ -124,7 +193,22 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     position: absolute;
-    top: 120px;
+    top: 77px;
     right: 50px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 79px;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-gray-500;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
   }
 }

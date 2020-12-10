@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     min-width: 668px;
-    max-width: none;
+    height: 89px;
     padding: 0 50px;
     text-align: left;
     grid-template-rows: repeat(2, max-content);
@@ -17,31 +17,92 @@
     max-width: 1150px;
     padding: 0 50px;
     text-align: center;
-    grid-template-columns: 4fr 2fr 1fr 3fr;
+    grid-template-columns: 8fr 4fr 3fr 5fr;
   }
 }
 
 .main-nav__toggle {
   position: absolute;
+  top: 14px;
+  right: 41px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
   border: none;
   background-color: $transparent;
   box-shadow: none;
 
-  &--open {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  content: "";
+  background-color: $color-gray-600;
+  box-shadow: 0 8px 0 0 $color-gray-600, 0 16px 0 0 $color-gray-600;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 23px;
+  right: 26px;
+  width: 30px;
+  height: 30px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    //top: 24px;
+    right: 0;
+    left: 0;
+    width: 26px;
+    height: 2px;
+    margin: 0 auto;
+    content: "";
+    background-color: $color-gray-600;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
 .main-nav__logo {
-  margin-bottom: 22px;
+  margin-bottom: 16px;
+  padding-top: 23px;
   text-align: center;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
-    margin: auto 0;
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 5px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 9px;
+    padding-bottom: 2px;
     text-align: center;
   }
 }
@@ -53,39 +114,70 @@
   color: $color-black;
   border-bottom: 1px solid $color-gray-100;
 
+  &:hover {
+    color: rgba($color-black, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-black, 0.3);
+  }
+
+  &:hover .main-nav__icon {
+    opacity: 1;
+    fill: $color-green-200;
+  }
+
+  &:active .main-nav__icon {
+    fill: rgba($color-green-200, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     padding-right: 0;
-    padding-left: 0;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 17px;
     border: none;
   }
 
   &--search {
     order: 3;
     color: $color-black;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      order: 0;
+      padding: 39px 41px;
+      text-align: center;
+      border-left: 1px solid $color-gray-200;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 70px;
+    }
   }
 
   &--cart {
     order: 4;
     color: $color-black;
-  }
 
-  @media (min-width: $tablet-width) {
-    &--search {
-      position: relative;
+    @media (min-width: $tablet-width) {
       order: 0;
-      margin: auto 0;
-      text-align: center;
-      background-repeat: no-repeat;
+      padding-top: 34px;
+      padding-bottom: 30px;
+      padding-left: 84px;
+      border-left: 1px solid $color-gray-200;
     }
 
-    &--cart {
+    @media (min-width: $desktop-width) {
       order: 0;
-      margin: auto 0;
+      padding-top: 34px;
+      padding-bottom: 30px;
+      padding-left: 0;
       text-align: right;
+      border-left: 1px solid $color-gray-200;
     }
   }
 }
@@ -101,43 +193,57 @@
 .main-nav__icon {
   position: absolute;
   top: 30px;
-  left: 30px;
+  fill: $color-black;
 
   &--cart {
+    left: 32px;
+
+    @media (min-width: $tablet-width) {
+      top: 34px;
+      left: 32px;
+    }
+
     @media (min-width: $desktop-width) {
-      left: 70px;
+      top: 35px;
+      left: 26px;
     }
   }
 
   &--search {
+    left: 30px;
+
     @media (min-width: $tablet-width) {
-      top: 20px;
-      left: -50px;
+      top: 36px;
+      left: 34px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 90px;
+      margin: 0 auto;
     }
   }
 }
 
 .main-nav__delivery {
   font-size: 15px;
+  z-index: 1;
   display: none;
   text-align: right;
   color: $color-gray-500;
 
   @media (min-width: $tablet-width) {
+    font-weight: 400;
     display: inline-block;
-    margin: auto 0;
+    margin-top: 21px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 16px 0;
     grid-column: 4/5;
   }
 }
 
 .main-nav__list {
+  z-index: 1;
   box-sizing: border-box;
   margin: 0;
   padding: 0;

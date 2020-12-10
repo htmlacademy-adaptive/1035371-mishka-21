@@ -30,6 +30,14 @@
   @media (min-width: $tablet-width) {
     position: relative;
     width: 50%;
+
+    &:hover {
+      transform: translateY(-5px);
+
+      & .products-categories__link::after {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--interior {
@@ -53,27 +61,37 @@
     font-size: 20px;
     line-height: 30px;
     padding-top: 25px;
-    padding-bottom: 24px;
+    padding-bottom: 37px;
     padding-left: 36px;
   }
 
   &::after {
     position: absolute;
-    top: 20px;
     content: "";
   }
 
   &--interior::after {
-    right: 30px;
+    top: 23px;
+    right: 36px;
     width: 40px;
     height: 62px;
     background-image: url("../img/interior.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+    }
   }
 
   &--toys::after {
-    right: 20px;
+    top: 21px;
+    right: 27px;
     width: 60px;
     height: 60px;
     background-image: url("../img/toy.svg");
+
+    @media (min-width: $tablet-width) {
+      top: 32px;
+      right: 33px;
+    }
   }
 }

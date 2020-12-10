@@ -4,14 +4,14 @@
 
 .page-footer__wrapper {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 12px 30px 22px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 37px 50px 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,26 +24,86 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin: auto 0;
+  }
+
+  &:hover .page-footer__logo-img {
+    fill: $color-green-400;
+  }
+
+  &:active .page-footer__logo-img {
+    opacity: 0.3;
   }
 }
 
 .page-footer__social-list {
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 23px;
+  padding: 0 0 11px;
   list-style: none;
+  border-bottom: 1px solid $color-gray-300;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
+.page-footer__social-item {
+  margin-right: 11px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.page-footer__link {
+  display: block;
+  padding: 15px;
+
+  &:hover .page-footer__img {
+    fill: $color-green-400;
+  }
+
+  &:active .page-footer__img {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__img {
+  vertical-align: middle;
+}
+
+.page-footer__text {
+  margin-right: 20px;
 }
 
 .page-footer__developer-label {
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
+  position: relative;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: auto 0;
+  }
+
+  &:hover .page-footer__developer-logo {
+    fill: $color-green-400;
+  }
+
+  &:active .page-footer__developer-logo {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__developer-logo {
   width: 27px;
   height: 34px;
+  vertical-align: middle;
   fill: $color-green-200;
 }
