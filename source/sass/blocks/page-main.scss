@@ -100,7 +100,9 @@
   }
 
   &--form {
+    margin-bottom: 20px;
     padding-top: 72px;
+    background-color: $color-gray-200;
 
     @media (min-width: $tablet-width) {
       padding-top: 100px;
