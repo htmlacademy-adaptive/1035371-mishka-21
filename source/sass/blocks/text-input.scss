@@ -40,8 +40,9 @@
 
 
 .text-input__label {
+  line-height: 18px;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   @media (min-width: 500px) {
     display: inline-block;
@@ -66,7 +67,7 @@
 .text-input__field {
   font-family: $font-stack;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 23px;
   width: 100%;
   padding-bottom: 11px;
   color: $color-gray-500;
@@ -75,6 +76,7 @@
   outline: none;
 
   &::placeholder {
+    line-height: 23px;
     opacity: 0.3;
     color: $color-black;
   }
@@ -93,5 +95,16 @@
     padding-left: 15px;
     resize: none;
     border: 2px solid $color-black;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-green-200;
+  }
+
+  &:hover + .text-input__icon,
+  &:focus + .text-input__icon {
+    opacity: 1;
+    fill: $color-green-200;
   }
 }
