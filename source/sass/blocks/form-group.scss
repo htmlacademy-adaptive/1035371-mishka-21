@@ -15,17 +15,65 @@
     margin: 0 auto;
     grid-template-columns: 1fr 4fr 1fr;
   }
+
+  &--type {
+    margin-bottom: 43px;
+  }
+
+  &--customer-name {
+    margin-bottom: 36px;
+  }
+
+  &--more {
+    margin-bottom: 17px;
+  }
 }
 
 .form-group__heading {
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
+  position: relative;
   display: block;
+  margin-top: 0;
+  margin-bottom: 35px;
   text-transform: uppercase;
   color: $color-green-200;
 
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    width: calc(100% - 60px);
+    height: 1px;
+    margin: auto 0;
+    content: "";
+    background-color: $color-green-200;
+  }
+
   @media (min-width: 500px) {
     display: inline;
+  }
+
+  &--customer-name {
+    margin-bottom: 26px;
+  }
+
+  &--tel {
+    margin-bottom: 14px;
+  }
+
+  &--email {
+    margin-bottom: 14px;
+
+    &::after {
+      left: 77px;
+      width: calc(100% - 77px);
+    }
+  }
+
+  &--message {
+    margin-bottom: 21px;
   }
 }

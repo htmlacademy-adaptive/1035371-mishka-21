@@ -1,9 +1,10 @@
 .text-input {
   font-size: 17px;
   font-weight: 700;
+  position: relative;
 
   &--name {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
   }
 
   &--phone {
@@ -40,6 +41,7 @@
 
 .text-input__label {
   display: block;
+  margin-bottom: 10px;
 
   @media (min-width: 500px) {
     display: inline-block;
@@ -51,7 +53,45 @@
 }
 
 .text-input__icon {
+  position: absolute;
+  right: 7px;
+
   &--email {
+    right: 3px;
+    bottom: 15px;
     fill: $color-black;
+  }
+}
+
+.text-input__field {
+  font-family: $font-stack;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  padding-bottom: 11px;
+  color: $color-gray-500;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  outline: none;
+
+  &::placeholder {
+    opacity: 0.3;
+    color: $color-black;
+  }
+
+  &--tel {
+    padding-bottom: 15px;
+  }
+
+  &--email {
+    padding-bottom: 15px;
+  }
+
+  &--message {
+    min-height: 142px;
+    padding-top: 16px;
+    padding-left: 15px;
+    resize: none;
+    border: 2px solid $color-black;
   }
 }

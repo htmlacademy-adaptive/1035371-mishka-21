@@ -2,8 +2,22 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
+  position: relative;
+  display: block;
+  padding-left: 60px;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
+  }
+
+  &::before {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    content: "";
+    border: 2px solid $color-gray-500;
+    border-radius: 50%;
   }
 }

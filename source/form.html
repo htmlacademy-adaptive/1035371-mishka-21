@@ -63,12 +63,12 @@
         <h3 class="form-group__heading">Тип</h3>
         <ul class="input-list input-list--type">
           <li class="input-list__item input-radio">
-            <input class="input-radio__field" type="radio" name="accessory" id="input-accessory" value="accessory" checked>
+            <input checked class="input-radio__field visually-hidden" id="input-accessory" name="accessory" type="radio" value="accessory">
             <label class="input-radio__label" for="input-accessory">Аксессуар для
               интерьера</label>
           </li>
           <li class="input-list__item input-radio">
-            <input class="input-radio__field" type="radio" name="accessory" id="input-toy" value="toy">
+            <input class="input-radio__field visually-hidden" id="input-toy" name="accessory" type="radio" value="toy">
             <label class="input-radio__label" for="input-toy">Детская игрушка</label>
           </li>
         </ul>
@@ -78,27 +78,27 @@
           <h3 class="form-group__heading">Цвет</h3>
           <ul class="input-list input-list--color">
             <li class="input-list__item input-checkbox">
-              <input class="input-list__checkbox input-checkbox__field" type="checkbox" name="white" id="color-white" checked>
+              <input checked class="input-list__checkbox input-checkbox__field visually-hidden" id="color-white" name="white" type="checkbox">
               <label class="input-list__label input-checkbox__label" for="color-white">Белый</label>
             </li>
             <li class="input-list__item input-checkbox">
-              <input class="input-list__checkbox input-checkbox__field" type="checkbox" name="grey" id="color-grey" checked>
+              <input checked class="input-list__checkbox input-checkbox__field visually-hidden" id="color-grey" name="grey" type="checkbox">
               <label class="input-list__label input-checkbox__label" for="color-grey">Серый</label>
             </li>
             <li class="input-list__item input-checkbox">
-              <input class="input-list__checkbox input-checkbox__field" type="checkbox" name="tiffany" id="color-tiffany">
+              <input class="input-list__checkbox input-checkbox__field visually-hidden" id="color-tiffany" name="tiffany" type="checkbox">
               <label class="input-list__label input-checkbox__label" for="color-tiffany">«Тиффани»</label>
             </li>
             <li class="input-list__item input-checkbox">
-              <input class="input-list__checkbox input-checkbox__field" type="checkbox" name="black" id="color-black">
+              <input class="input-list__checkbox input-checkbox__field visually-hidden" id="color-black" name="black" type="checkbox">
               <label class="input-list__label input-checkbox__label" for="color-black">Черный</label>
             </li>
             <li class="input-list__item input-checkbox">
-              <input class="input-list__checkbox input-checkbox__field" type="checkbox" name="pink" id="color-pink">
+              <input class="input-list__checkbox input-checkbox__field visually-hidden" id="color-pink" name="pink" type="checkbox">
               <label class="input-list__label input-checkbox__label" for="color-pink">Розовый</label>
             </li>
             <li class="input-list__item input-checkbox">
-              <input class="input-list__checkbox input-checkbox__field" type="checkbox" name="orange" id="color-orange">
+              <input class="input-list__checkbox input-checkbox__field visually-hidden" id="color-orange" name="orange" type="checkbox">
               <label class="input-list__label input-checkbox__label" for="color-orange">Оранжевый</label>
             </li>
           </ul>
@@ -106,7 +106,7 @@
       </div>
       <section class="form-group form-group--customer-name">
         <h3 class="visually-hidden">Контакты покупателя</h3>
-        <h4 class="form-group__heading">ФИО</h4>
+        <h4 class="form-group__heading form-group__heading--customer-name">ФИО</h4>
         <ul class="input-list input-list--customer-name">
           <li class="text-input text-input--name">
             <label class="text-input__label" for="name-input">Имя:</label>
@@ -122,11 +122,11 @@
           </li>
         </ul>
       </section>
-      <div class="form__wrapper">
+      <div class="form__wrapper form__wrapper--customer-contacts">
         <section class="form-group form-group--customer-contacts">
           <ul class="input-list input-list--customer-contacts">
             <li class="text-input text-input--phone">
-              <label class="form-group__heading" for="tel-input">Тел</label>
+              <label class="form-group__heading form-group__heading--tel" for="tel-input">Тел</label>
               <input class="text-input__field text-input__field--tel" type="tel" id="tel-input" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               <svg class="text-input__icon text-input__icon--tel" opacity="0.2" width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -140,7 +140,7 @@
               </svg>
             </li>
             <li class="text-input text-input--email">
-              <label class="form-group__heading" for="email-input">E-mail</label>
+              <label class="form-group__heading form-group__heading--email" for="email-input">E-mail</label>
               <input class="text-input__field text-input__field--email" type="email" id="email-input" placeholder="Ваш Email*">
               <svg class="text-input__icon text-input__icon--email" opacity="0.2" width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -151,8 +151,8 @@
         </section>
       </div>
       <section class="form-group form-group--more text-input text-input--more">
-        <label class="form-group__heading" for="message">Доп</label>
-        <textarea class="text-input__field" name="customer-message" id="message"
+        <label class="form-group__heading form-group__heading--message" for="message">Доп</label>
+        <textarea class="text-input__field text-input__field--message" id="message" name="customer-message"
                   placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </section>
       <div class="form__wrapper form__wrapper--transparent">

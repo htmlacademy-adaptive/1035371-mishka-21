@@ -1,5 +1,21 @@
+.input-checkbox {
+  margin-bottom: 38px;
+}
+
 .input-checkbox__label {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
+  position: relative;
+  padding-left: 61px;
+
+  &::before {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    content: "";
+    border: 2px solid $color-gray-500;
+  }
 }
