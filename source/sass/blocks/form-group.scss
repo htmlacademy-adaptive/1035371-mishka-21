@@ -27,6 +27,7 @@
   &--color {
     @media (min-width: $tablet-width) {
       padding-bottom: 65px;
+      grid-template-columns: 1fr 5fr;
     }
   }
 
@@ -51,6 +52,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 52px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 48px;
+    }
   }
 }
 
@@ -64,6 +69,11 @@
   margin-bottom: 35px;
   text-transform: uppercase;
   color: $color-green-200;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-left: 60px;
+  }
 
   &::after {
     position: absolute;
