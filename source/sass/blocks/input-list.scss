@@ -9,17 +9,16 @@
       grid-template-columns: 1fr 1fr;
     }
 
+    @media (min-width: $tablet-width) {
+      grid-column-gap: 23px;
+    }
+
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
   &--customer-contacts {
-    @media (min-width: 600px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
     @media (min-width: $tablet-width) {
       display: block;
       grid-column: 1/-1;
@@ -38,6 +37,16 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+
+    &--color {
+      &:nth-last-child(-n+2) {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 

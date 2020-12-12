@@ -1,5 +1,9 @@
 .input-checkbox {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .input-checkbox__label {
@@ -19,6 +23,16 @@
     margin: auto 0;
     content: "";
     border: 2px solid $color-gray-500;
+
+    @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    padding-left: 83px;
   }
 
   &:hover::before {
@@ -43,5 +57,10 @@
     content: "";
     background-image: url("../img/tick.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 10px;
+      background-image: url("../img/tick-tablet.svg");
+    }
   }
 }
