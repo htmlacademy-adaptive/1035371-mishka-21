@@ -1,16 +1,10 @@
-.input-checkbox {
-  margin-bottom: 38px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 53px;
-  }
-}
-
 .input-checkbox__label {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
   position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 61px;
 
   &::before {
