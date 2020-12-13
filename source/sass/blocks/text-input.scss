@@ -4,7 +4,7 @@
   position: relative;
 
   &--name {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -95,7 +95,7 @@
 .text-input__field {
   font-family: $font-stack;
   font-size: 17px;
-  line-height: 18px;
+  line-height: 24px;
   width: 100%;
   padding-bottom: 11px;
   color: $color-gray-500;
@@ -104,16 +104,14 @@
   outline: none;
   background-color: $transparent;
 
-  //&::placeholder {
-  //  line-height: 23px;
-  //  opacity: 0.3;
-  //  color: $color-black;
-  //
-  //  @media (min-width: $tablet-width) {
-  //    font-size: 19px;
-  //    line-height: 18px;
-  //  }
-  //}
+  &::placeholder {
+    opacity: 0.3;
+    color: $color-black;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -135,7 +133,10 @@
   }
 
   &--message {
+    line-height: 18px;
     min-height: 142px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-top: 16px;
     padding-left: 15px;
     resize: none;
