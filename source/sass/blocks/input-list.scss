@@ -23,6 +23,7 @@
 
   &--customer-contacts {
     @media (min-width: $tablet-width) {
+      z-index: 1;
       display: block;
       grid-column: 1/-1;
     }

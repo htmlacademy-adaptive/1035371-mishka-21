@@ -36,7 +36,7 @@
 
   &--color {
     @media (min-width: $tablet-width) {
-      margin-bottom: 67px;
+      margin-bottom: 52px;
       padding-top: 50px;
     }
   }
@@ -45,12 +45,12 @@
     margin-bottom: 35px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 65px;
+      padding-top: 47px;
     }
   }
 
   &:last-child {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 }
 
