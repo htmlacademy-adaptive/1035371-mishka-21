@@ -48,7 +48,7 @@
 .text-input__label {
   line-height: 18px;
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 3px;
 
   @media (min-width: 500px) {
     display: inline-block;
@@ -62,8 +62,10 @@
 
 .text-input__icon {
   position: absolute;
+  z-index: -1;
 
   &--tel {
+    top: 32px;
     right: 7px;
 
     @media (min-width: $tablet-width) {
@@ -97,6 +99,7 @@
   font-size: 17px;
   line-height: 24px;
   width: 100%;
+  padding-top: 11px;
   padding-bottom: 11px;
   color: $color-gray-500;
   border: none;
@@ -120,6 +123,8 @@
   }
 
   &--tel {
+    padding-top: 15px;
+    padding-right: 40px;
     padding-bottom: 15px;
 
     @media (min-width: $tablet-width) {
@@ -129,7 +134,9 @@
   }
 
   &--email {
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-right: 40px;
+    padding-bottom: 12px;
   }
 
   &--message {
@@ -137,9 +144,7 @@
     display: block;
     min-height: 142px;
     margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 16px;
-    padding-left: 15px;
+    padding: 16px 15px;
     resize: none;
     border: 2px solid $color-black;
   }

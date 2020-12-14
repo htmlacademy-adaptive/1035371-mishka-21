@@ -23,6 +23,27 @@
     }
   }
 
+  &::after {
+    position: absolute;
+    top: 3px;
+    bottom: 0;
+    left: 6px;
+    display: none;
+    width: 32px;
+    height: 22px;
+    margin: auto 0;
+    content: "";
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 2px;
+      left: 10px;
+      background-image: url("../img/tick.svg");
+      background-size: 100%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 19px;
     min-height: 52px;
@@ -41,22 +62,6 @@
 
 .input-checkbox__field {
   &:checked + .input-checkbox__label::after {
-    position: absolute;
-    top: 3px;
-    bottom: 0;
-    left: 6px;
-    width: 32px;
-    height: 22px;
-    margin: auto 0;
-    content: "";
-    background-image: url("../img/tick.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      top: 2px;
-      left: 10px;
-      background-image: url("../img/tick.svg");
-      background-size: 100%;
-    }
+    display: block;
   }
 }

@@ -11,7 +11,7 @@
 
     @media (min-width: $tablet-width) {
       grid-column-gap: 23px;
-      grid-row-gap: 28px;
+      grid-row-gap: 24px;
     }
 
     @media (min-width: $desktop-width) {
@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 56px;
+    margin-bottom: 27px;
 
     &--color {
       &:nth-last-child(-n+2) {
