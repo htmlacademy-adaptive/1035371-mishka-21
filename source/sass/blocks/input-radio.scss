@@ -3,7 +3,9 @@
   font-weight: 700;
   line-height: 18px;
   position: relative;
-  display: block;
+  display: flex;
+  min-height: 40px;
+  margin: auto 0;
   padding-left: 60px;
 
   @media (min-width: $tablet-width) {
@@ -57,4 +59,9 @@
       left: 19px;
     }
   }
+}
+
+.input-radio__text {
+  display: block;
+  margin: auto 0;
 }

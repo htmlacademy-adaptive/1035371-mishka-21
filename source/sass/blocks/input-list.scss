@@ -36,7 +36,7 @@
 }
 
 .input-list__item {
-  margin-bottom: 24px;
+  margin-bottom: 11px;
 
   &:last-child {
     margin-bottom: 0;
@@ -70,9 +70,15 @@
 }
 
 .input-list__label {
-  display: block;
+  display: flex;
+  margin: auto 0;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
   }
+}
+
+.input-list__text {
+  display: block;
+  margin: auto 0;
 }
