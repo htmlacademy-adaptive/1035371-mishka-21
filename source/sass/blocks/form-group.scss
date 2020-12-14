@@ -28,6 +28,7 @@
     @media (min-width: $tablet-width) {
       padding-bottom: 65px;
       grid-template-columns: 1fr 5fr;
+      grid-column-gap: 67px;
     }
   }
 

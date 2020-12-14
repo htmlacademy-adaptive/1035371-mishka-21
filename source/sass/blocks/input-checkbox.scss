@@ -26,6 +26,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 83px;
   }
 
@@ -54,7 +56,7 @@
 
     @media (min-width: $tablet-width) {
       left: 10px;
-      background-image: url("../img/tick-tablet.svg");
+      background-image: url("../img/tick.svg");
     }
   }
 }
