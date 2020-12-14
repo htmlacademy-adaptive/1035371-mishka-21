@@ -26,7 +26,7 @@
 
   &--color {
     @media (min-width: $tablet-width) {
-      padding-bottom: 65px;
+      padding-bottom: 52px;
       grid-template-columns: 1fr 5fr;
       grid-column-gap: 67px;
     }
@@ -94,6 +94,11 @@
 
   &--color {
     margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
   }
 
 

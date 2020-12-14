@@ -11,6 +11,7 @@
 
     @media (min-width: $tablet-width) {
       grid-column-gap: 23px;
+      grid-row-gap: 28px;
     }
 
     @media (min-width: $desktop-width) {
@@ -41,14 +42,6 @@
     margin-bottom: 0;
   }
 
-  &--color {
-    margin-bottom: 23px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 53px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     margin-bottom: 56px;
 
@@ -64,6 +57,14 @@
       &:nth-last-child(-n+3) {
         margin-bottom: 0;
       }
+    }
+  }
+
+  &--color {
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
     }
   }
 }
