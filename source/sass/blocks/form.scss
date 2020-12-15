@@ -12,6 +12,8 @@
 }
 
 .form__wrapper {
+  margin-bottom: 33px;
+
   @media (min-width: $tablet-width) {
     background-color: $color-gray-200;
   }
@@ -31,32 +33,62 @@
       grid-template-columns: 1fr 2fr 2fr 1fr;
     }
   }
+
+  &--color {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 52px;
+      padding-top: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 48px;
+    }
+  }
+
+  &--customer-contacts {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 47px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 50px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 49px;
+    }
+  }
 }
 
 
 .form__description {
   font-size: 13px;
   line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 29px;
   color: $color-gray-500;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 64px;
     padding-right: 50px;
     padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding-left: 225px;
+    max-width: 702px;
+    margin: 0 auto 65px;
+    padding: 0;
   }
 }
 
 .form__clarification {
   font-size: 14px;
   line-height: 16px;
-  margin: 0 auto;
+  margin: 0 auto 30px 0;
   color: $color-gray-500;
 
   @media (min-width: $tablet-width) {
@@ -69,15 +101,16 @@
 }
 
 .form__button {
+  font-size: 17px;
+  line-height: 16px;
   display: block;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 16px 18px;
   background-color: $transparent;
 
   @media (min-width: $tablet-width) {
     margin-right: auto;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   @media (min-width: $desktop-width) {

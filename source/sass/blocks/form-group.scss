@@ -15,17 +15,142 @@
     margin: 0 auto;
     grid-template-columns: 1fr 4fr 1fr;
   }
+
+  &--type {
+    margin-bottom: 32px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &--color {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 50px;
+      grid-template-columns: 1fr 5fr;
+      grid-column-gap: 67px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 52px;
+      grid-column-gap: 0;
+    }
+  }
+
+  &--customer-name {
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 52px;
+    }
+  }
+
+  &--customer-contacts {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &--more {
+    margin-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .form-group__heading {
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
+  position: relative;
   display: block;
+  margin-top: 0;
+  margin-bottom: 33px;
   text-transform: uppercase;
   color: $color-green-200;
 
-  @media (min-width: 500px) {
-    display: inline;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding-left: 60px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    width: calc(100% - 60px);
+    height: 1px;
+    margin: auto 0;
+    content: "";
+    background-color: $color-green-200;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--type {
+    @media (min-width: $tablet-width) {
+      margin-top: 17px;
+    }
+  }
+
+  &--color {
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
+    }
+  }
+
+  &--customer-name {
+    margin-bottom: 29px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  &--tel {
+    margin-bottom: 1px;
+
+    @media (min-width: $tablet-width) {
+      margin: auto 0;
+    }
+  }
+
+  &--email {
+    margin-bottom: 5px;
+
+    @media (min-width: $tablet-width) {
+      margin: auto 0;
+    }
+
+    &::after {
+      left: 77px;
+      width: calc(100% - 77px);
+    }
+  }
+
+  &--message {
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
   }
 }

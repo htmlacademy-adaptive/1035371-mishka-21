@@ -2,8 +2,72 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
+  position: relative;
+  display: flex;
+  min-height: 40px;
+  margin: auto 0;
+  padding-left: 60px;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
+    min-height: 49px;
+    padding-left: 80px;
   }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 4px;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    content: "";
+    border: 2px solid $color-gray-500;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 49px;
+      height: 49px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    display: none;
+    width: 18px;
+    height: 18px;
+    margin: auto 0;
+    content: "";
+    border-radius: 50%;
+    background-color: $color-green-200;
+
+    @media (min-width: $tablet-width) {
+      left: 19px;
+    }
+  }
+
+  &:hover::before {
+    border-color: $color-green-200;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+    border-color: $color-black;
+  }
+}
+
+
+.input-radio__field {
+  &:checked + .input-radio__label::after {
+    display: block;
+  }
+}
+
+.input-radio__text {
+  display: block;
+  margin: auto 0;
 }
