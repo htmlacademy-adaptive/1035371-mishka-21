@@ -17,11 +17,21 @@
     padding-top: 22px;
     padding-bottom: 26px;
     border-bottom: none;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 24px;
+      padding-top: 41px;
+      padding-bottom: 0;
+    }
   }
 
   &--label {
     padding-top: 36px;
     border-top: none;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
   }
 }
 
@@ -46,8 +56,8 @@
   &::before {
     position: absolute;
     top: 0;
-    bottom: 0;
-    left: -58px;
+    bottom: 9px;
+    left: -66px;
     width: 32px;
     height: 22px;
     margin-top: auto;
@@ -86,8 +96,9 @@
   box-shadow: none;
 
   @media (min-width: $tablet-width) {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 41px;
+    margin-bottom: 45px;
+    margin-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,6 +112,8 @@
 .development-process__visualisation {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     order: -1;
@@ -129,11 +142,6 @@
 
 .development-process__button {
   position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: 50%;
-  left: 0;
-  margin: auto;
   padding: 39px 51px;
   border: none;
   background-color: $transparent;
