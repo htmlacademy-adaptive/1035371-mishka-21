@@ -1,4 +1,14 @@
 .development-process {
+  &:active .development-process__wrapper--label {
+    box-shadow: 0 3px 5px rgba($color-black, 0.1);
+  }
+
+  @media (min-width: 475px) {
+    &:hover .development-process__wrapper--label {
+      box-shadow: 0 6px 10px rgba($color-black, 0.1);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
   }
@@ -67,8 +77,8 @@
   &::before {
     position: absolute;
     top: 0;
-    bottom: 9px;
-    left: -66px;
+    bottom: 0;
+    left: -58px;
     width: 32px;
     height: 22px;
     margin-top: auto;
@@ -79,6 +89,11 @@
     background-image: url("../img/video.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      bottom: 7px;
+      left: -65px;
+    }
 
     @media (min-width: $desktop-width) {
       top: -126px;
