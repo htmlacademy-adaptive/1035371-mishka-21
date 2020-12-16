@@ -120,6 +120,14 @@
     margin-bottom: 13px;
     margin-left: 27px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .products__name {
@@ -238,6 +246,15 @@
     right: 12px;
     bottom: 7px;
     padding-bottom: 20px;
+  }
+
+  &:hover .products__add-to-cart-img {
+    opacity: 1;
+    fill: $color-green-200;
+  }
+
+  &:active .products__add-to-cart-img {
+    opacity: 0.3;
   }
 }
 
