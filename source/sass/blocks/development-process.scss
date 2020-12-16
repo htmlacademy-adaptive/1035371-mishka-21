@@ -195,4 +195,13 @@
   background-image: url("../img/play.svg");
   background-repeat: no-repeat;
   background-size: 100%;
+
+  &:hover {
+    padding: 47px 61px;
+  }
+
+  &:active {
+    padding: 31px 41px;
+    opacity: 0.3;
+  }
 }
