@@ -1,12 +1,20 @@
 .development-process {
-  &:active .development-process__wrapper--label {
-    box-shadow: 0 3px 5px rgba($color-black, 0.1);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 455px;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: calc(100% - 455px);
+    content: "";
+    background-color: $transparent;
+    box-shadow: 0 6px 10px rgba($color-black, 0.1);
   }
 
-  @media (min-width: 475px) {
-    &:hover .development-process__wrapper--label {
-      box-shadow: 0 6px 10px rgba($color-black, 0.1);
-    }
+  &:hover::after {
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
@@ -16,7 +24,14 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 105px;
     grid-template-columns: 682px 1fr;
-    grid-template-rows: repeat(3, max-content);
+    grid-template-rows: repeat(2, max-content);
+
+    &::after {
+      top: 0;
+      left: 682px;
+      width: calc(100% - 682px);
+      height: 100%;
+    }
   }
 }
 
@@ -29,13 +44,12 @@
     border-bottom: none;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 24px;
       padding-top: 41px;
-      padding-bottom: 0;
+      padding-bottom: 24px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 26px;
+      margin-bottom: 0;
       padding-top: 96px;
       padding-right: 30px;
       padding-left: 79px;
@@ -160,10 +174,11 @@
 .development-process__video {
   display: block;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     min-width: 668px;
+    height: 455px;
   }
 
   @media (min-width: $desktop-width) {
