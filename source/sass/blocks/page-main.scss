@@ -82,6 +82,12 @@
       padding-bottom: 95px;
     }
   }
+
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 95px;
+    }
+  }
 }
 
 .page-main__header-wrapper {
@@ -156,7 +162,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 111px;
+      margin-bottom: 129px;
 
       &::after {
         bottom: -18px;
@@ -179,6 +185,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1150px;
+    margin-bottom: 49px;
   }
 
   &--development {
