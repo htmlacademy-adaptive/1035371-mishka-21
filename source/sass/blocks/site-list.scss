@@ -5,7 +5,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 71px;
+    margin-right: 0;
+
+    &--catalog {
+      border-right: 1px solid $color-gray-200;
+    }
   }
 
   &:last-child {
@@ -21,5 +25,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 34px 0;
+
+    &--catalog {
+      padding-right: 35px;
+    }
+
+    &--order {
+      padding-right: 35px;
+      padding-left: 35px;
+    }
   }
 }
