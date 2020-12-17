@@ -1,14 +1,77 @@
 .development-process {
-  border: 1px solid $color-gray-100;
+  position: relative;
+  padding-top: 23px;
+  border: 1px solid $color-gray-200;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 455px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    content: "";
+    background-color: $transparent;
+    box-shadow: 0 6px 10px rgba($color-black, 0.1);
+  }
+
+  &:hover::after {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 2fr 1fr;
+    margin-bottom: 105px;
+    grid-template-columns: 682px 1fr;
     grid-template-rows: repeat(3, max-content);
-    grid-column-gap: 62px;
+    grid-column-gap: 78px;
+
+    &::after {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 683px;
+    }
+  }
+}
+
+.development-process__wrapper {
+  border: 1px solid $color-gray-200;
+
+  &--heading {
+    padding-top: 22px;
+    padding-bottom: 26px;
+    border-bottom: none;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 41px;
+      padding-bottom: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      padding-top: 96px;
+      padding-right: 30px;
+      padding-left: 79px;
+    }
+  }
+
+  &--label {
+    padding-top: 36px;
+    border-top: none;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 79px;
+    }
   }
 }
 
@@ -17,38 +80,53 @@
   font-weight: 700;
   line-height: 24px;
   position: relative;
-  margin: 0 34px 21px 91px;
+  margin: 0 34px 26px 91px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     margin-right: 40px;
+    margin-bottom: 24px;
     margin-left: 107px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin: 96px 60px 26px 0;
   }
 
   &::before {
     position: absolute;
-    bottom: 40%;
-    left: -60px;
+    top: 0;
+    bottom: 0;
+    left: -58px;
     width: 32px;
     height: 22px;
+    margin-top: auto;
+    margin-bottom: auto;
     content: "";
     border: none;
     background-color: $transparent;
     background-image: url("../img/video.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      bottom: 7px;
+      left: -65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -126px;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
 
 .development-process__description {
   font-size: 13px;
   line-height: 24px;
-  margin: 0 34px 40px;
+  margin: 0 32px 40px;
   color: $color-gray-500;
 
   @media (min-width: $tablet-width) {
@@ -59,50 +137,60 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
     margin-left: 0;
   }
 }
 
 .development-process__order {
-  margin: 0 34px 33px 34px;
-  padding: 18px 11px;
+  margin: 0 33px 32px 33px;
+  padding: 14px 19px;
   background-color: $transparent;
   box-shadow: none;
 
   @media (min-width: $tablet-width) {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 41px;
+    margin-bottom: 45px;
+    margin-left: 41px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: 0;
-    padding: 18px 45px;
+    line-height: 16px;
+    margin: auto 56px 59px 0;
+    padding: 16px 39px;
   }
 }
 
 .development-process__visualisation {
   position: relative;
   display: flex;
-  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+  margin-left: -1px;
 
   @media (min-width: $tablet-width) {
     order: -1;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $color-gray-200;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    border-bottom: none;
     grid-row: 1/-1;
   }
 }
 
 .development-process__video {
+  display: block;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     min-width: 668px;
+    height: 455px;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,15 +201,19 @@
 
 .development-process__button {
   position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: 50%;
-  left: 0;
-  margin: auto;
-  padding: 38px 51px;
+  padding: 39px 51px;
   border: none;
   background-color: $transparent;
   background-image: url("../img/play.svg");
   background-repeat: no-repeat;
   background-size: 100%;
+
+  &:hover {
+    padding: 47px 61px;
+  }
+
+  &:active {
+    padding: 31px 41px;
+    opacity: 0.3;
+  }
 }
