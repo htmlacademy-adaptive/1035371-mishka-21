@@ -1,13 +1,15 @@
 .development-process {
   position: relative;
+  padding-top: 23px;
+  border: 1px solid $color-gray-200;
 
   &::after {
     position: absolute;
     top: 455px;
+    right: 0;
+    bottom: 0;
     left: 0;
     display: none;
-    width: 100%;
-    height: calc(100% - 455px);
     content: "";
     background-color: $transparent;
     box-shadow: 0 6px 10px rgba($color-black, 0.1);
@@ -19,18 +21,20 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 105px;
     grid-template-columns: 682px 1fr;
-    grid-template-rows: repeat(2, max-content);
+    grid-template-rows: repeat(3, max-content);
+    grid-column-gap: 78px;
 
     &::after {
       top: 0;
-      left: 682px;
-      width: calc(100% - 682px);
-      height: 100%;
+      right: 0;
+      bottom: 0;
+      left: 683px;
     }
   }
 }
@@ -75,17 +79,18 @@
   font-weight: 700;
   line-height: 24px;
   position: relative;
-  margin: 0 34px 0 91px;
+  margin: 0 34px 26px 91px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     margin-right: 40px;
+    margin-bottom: 24px;
     margin-left: 107px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin: 96px 60px 26px 0;
   }
 
   &::before {
@@ -137,6 +142,7 @@
 }
 
 .development-process__order {
+  z-index: 1;
   margin: 0 33px 32px 33px;
   padding: 14px 19px;
   background-color: $transparent;
@@ -160,13 +166,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 36px;
+  margin-left: -1px;
 
   @media (min-width: $tablet-width) {
     order: -1;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $color-gray-200;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    border-bottom: none;
     grid-row: 1/-1;
   }
 }
