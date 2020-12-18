@@ -3,13 +3,33 @@
   font-weight: 700;
   line-height: 30px;
 
+  &--popup {
+    margin-top: 0;
+    margin-bottom: 14px;
+    padding: 0 50px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+
+    &--popup {
+      font-size: 30px;
+      line-height: 57px;
+      margin-bottom: 11px;
+      padding: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+
+    &--popup {
+      font-size: 30px;
+      line-height: 57px;
+    }
   }
 }

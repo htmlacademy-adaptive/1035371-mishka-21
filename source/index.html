@@ -126,7 +126,8 @@
           </div>
         </blockquote>
         <blockquote class="reviews__item">
-          <p class="reviews__text">Я&nbsp;сестра молодой мамы, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек.
+          <p class="reviews__text">Я&nbsp;сестра молодой мамы, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных
+            инстамамочек.
             В&nbsp;отчаянии, я&nbsp;накупила аксессуаров
             и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают
             больше лайков!</p>
@@ -239,5 +240,22 @@
     </a>
   </div>
 </footer>
+<section class="modal modal--shown">
+  <div class="modal__content">
+    <h2 class="section-heading section-heading--popup">Добавить в&nbsp;корзину</h2>
+    <p class="modal__label">Выберите размер:</p>
+    <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
+      <div class="modal__form-list">
+        <input checked class="modal__form-input visually-hidden" id="size-s" name="size" type="radio" value="size-s">
+        <label class="modal__form-label modal__form-label--small" for="size-s">S</label>
+        <input class="modal__form-input visually-hidden" id="size-m" name="size" type="radio" value="size-m">
+        <label class="modal__form-label modal__form-label--medium" for="size-m">M</label>
+        <input class="modal__form-input visually-hidden" id="size-l" name="size" type="radio" value="size-l">
+        <label class="modal__form-label modal__form-label--large" for="size-l">L</label>
+      </div>
+      <button class="modal__submit button" type="submit">Добавить</button>
+    </form>
+  </div>
+</section>
 </body>
 </html>
