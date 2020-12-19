@@ -12,7 +12,7 @@ toggleButton.addEventListener("click", (e) => {
   menu.classList.toggle("main-nav--opened");
 });
 
-toggleButton.addEventListener("click", (toggeButton) => {
+toggleButton.addEventListener("click", (toggleButton) => {
   if (buttonText.innerHTML === "Открыть меню") {
     buttonText.innerHTML = "Закрыть меню";
   } else {

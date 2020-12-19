@@ -1,7 +1,7 @@
 // Const
 const modal = document.querySelector(".modal");
 const modalContent = document.querySelector(".modal__content");
-const modalButton = document.querySelector(".order");
+const modalButtons = document.querySelectorAll(".order");
 
 const showModal = (modal) => {
   modal.classList.add("modal--shown");
@@ -12,10 +12,12 @@ const closeModal = (modal) => {
 };
 
 // Functions
-modalButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  showModal(modal);
-});
+for (let button of modalButtons) {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    showModal(modal);
+  });
+}
 
 modal.addEventListener("click", (e) => {
   e.preventDefault();
