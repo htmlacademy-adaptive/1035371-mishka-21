@@ -16,7 +16,6 @@ const sync = require("browser-sync").create();
 const magicImporter = require("node-sass-magic-importer");
 
 // Styles
-
 const styles = () => {
   return gulp
     .src("source/sass/style.scss")
@@ -33,7 +32,6 @@ const styles = () => {
 exports.styles = styles;
 
 // Images
-
 const images = () => {
   return gulp
     .src("source/img/**/*.{jpg,png,svg}")
@@ -50,7 +48,6 @@ const images = () => {
 exports.images = images;
 
 // WebP
-
 const createWebp = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
@@ -61,7 +58,6 @@ const createWebp = () => {
 exports.createWebp = createWebp;
 
 // Sprites
-
 const sprite = () => {
   return gulp
     .src("source/img/icons/*.svg")
@@ -73,7 +69,6 @@ const sprite = () => {
 exports.sprite = sprite;
 
 // HTML
-
 const html = () => {
   return gulp
     .src("source/*.html")
@@ -82,7 +77,6 @@ const html = () => {
 };
 
 // JS
-
 const scripts = () => {
   return gulp
     .src("source/js/*.js")
@@ -113,7 +107,6 @@ const copy = () => {
 exports.copy = copy;
 
 // Clean
-
 const clean = () => {
   return del("build");
 };
@@ -121,7 +114,6 @@ const clean = () => {
 exports.clean = clean;
 
 // Server
-
 const server = (done) => {
   sync.init({
     server: {
@@ -137,14 +129,12 @@ const server = (done) => {
 exports.server = server;
 
 // Reload
-
 const reload = (done) => {
   sync.reload();
   done();
 };
 
 // Watcher
-
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/js/*.js", gulp.series(scripts));
@@ -154,7 +144,7 @@ const watcher = () => {
 // Build
 const build = gulp.series(
   clean,
-  gulp.series(styles, html, sprite, copy, createWebp, scripts)
+  gulp.parallel(styles, html, sprite, scripts, copy, images, createWebp)
 );
 
 exports.build = build;
