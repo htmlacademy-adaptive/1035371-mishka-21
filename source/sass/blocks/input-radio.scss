@@ -66,6 +66,11 @@
   &:checked + .input-radio__label::after {
     display: block;
   }
+
+  &:focus + .input-radio__label {
+    outline: 1px solid $color-black;
+    outline-offset: 5px;
+  }
 }
 
 .input-radio__text {

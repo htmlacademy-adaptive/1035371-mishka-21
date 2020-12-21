@@ -63,4 +63,9 @@
   &:checked + .input-checkbox__label::after {
     display: block;
   }
+
+  &:focus + .input-checkbox__label {
+    outline: 1px solid $color-black;
+    outline-offset: 4px;
+  }
 }
