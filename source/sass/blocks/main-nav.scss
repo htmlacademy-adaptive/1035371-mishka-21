@@ -162,7 +162,6 @@
   }
 
   &--search {
-    order: 3;
     color: $color-black;
 
     @media (min-width: $tablet-width) {
@@ -180,7 +179,6 @@
   }
 
   &--cart {
-    order: 4;
     color: $color-black;
 
     @media (min-width: $tablet-width) {
@@ -254,6 +252,7 @@
   @media (min-width: $tablet-width) {
     font-weight: 400;
     display: inline-block;
+    order: 1;
     margin-top: 21px;
   }
 
@@ -283,6 +282,7 @@
 
     @media (min-width: $tablet-width) {
       display: flex;
+      order: 1;
       border: none;
       grid-column: 1/3;
     }

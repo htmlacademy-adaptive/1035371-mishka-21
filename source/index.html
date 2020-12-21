@@ -19,18 +19,6 @@
       </picture>
     </a>
     <button class="main-nav__toggle" type="button"><span class="visually-hidden main-nav__toggle-text">Открыть меню</span></button>
-    <a aria-label="Поиск по сайту" class="main-nav__link main-nav__link--search main-nav__item" href="#">
-      <svg class="main-nav__icon main-nav__icon--search" height="18" width="18">
-        <use xlink:href="img/sprite.svg#search"></use>
-      </svg>
-      <span class="main-nav__label main-nav__label--search">Поиск по сайту</span>
-    </a>
-    <a class=" main-nav__link main-nav__link--cart main-nav__item" href="#">
-      <svg class="main-nav__icon main-nav__icon--cart" opacity="0.2" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <use xlink:href="img/sprite.svg#cart"></use>
-      </svg>
-      <span class="main-nav__label main-nav__label--cart">Корзина: пока пуста</span>
-    </a>
     <ul class="main-nav__list main-nav__list--site site-list">
       <li class="site-list__item site-list__item--catalog">
         <a class="main-nav__link site-list__link site-list__link--catalog main-nav__item" href="catalog.html">Каталог товаров</a>
@@ -39,6 +27,18 @@
         <a class="main-nav__link site-list__link site-list__link--order main-nav__item" href="form.html">Вязание на заказ</a>
       </li>
     </ul>
+    <a aria-label="Поиск по сайту" class="main-nav__link main-nav__link--search main-nav__item" href="#">
+      <svg class="main-nav__icon main-nav__icon--search" height="18" width="18">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+      <span class="main-nav__label main-nav__label--search">Поиск по сайту</span>
+    </a>
+    <a class=" main-nav__link main-nav__link--cart main-nav__item" href="#">
+      <svg class="main-nav__icon main-nav__icon--cart" height="18" viewBox="0 0 21 18" width="21">
+        <use xlink:href="img/sprite.svg#cart"></use>
+      </svg>
+      <span class="main-nav__label main-nav__label--cart">Корзина: пока пуста</span>
+    </a>
     <ul class="main-nav__list main-nav__list--offers offers-list">
       <li class="offers-list__item">
         <a class="main-nav__link offers-list__link" href="#">Новые поступления</a>
@@ -167,7 +167,7 @@
       <div class="contacts__wrapper">
         <dt class="contacts__item">E-mail:</dt>
         <dd class="contacts__description contacts__description--email">
-          <a class="contacts__link" href="mailto: info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </dd>
       </div>
       <div class="contacts__wrapper">
@@ -177,7 +177,7 @@
     </dl>
     <iframe class="contacts__location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.3304763799065!2d30.32245446042498!3d59.938745108857034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1605360584589!5m2!1sru!2sru"
-            width="320px%" height="454" aria-hidden="false"
+            aria-hidden="false" height="454" width="320px"
             tabindex="0"></iframe>
     <a class="contacts__write-us button" href="#">Напишите нам</a>
   </section>
@@ -230,7 +230,7 @@
     </ul>
     <a class="page-footer__developer-label" href="#">
       <span class="page-footer__text">Разработано</span>
-      <svg class="page-footer__developer-logo" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="page-footer__developer-logo" height="35" viewBox="0 0 27 35" width="27">
         <use xlink:href="img/sprite.svg#htmlacademy"></use>
       </svg>
       <span class="page-footer__developer-logo visually-hidden">HTML Academy</span>
