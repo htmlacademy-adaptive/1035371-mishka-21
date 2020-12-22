@@ -1,3 +1,9 @@
+.input-checkbox {
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
 .input-checkbox__label {
   font-size: 17px;
   font-weight: 700;
