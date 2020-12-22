@@ -24,7 +24,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 20px;
-  right: 30px;
+  right: 21px;
   display: flex;
   width: 30px;
   height: 30px;
@@ -50,12 +50,12 @@
   margin: auto;
   content: "";
   background-color: $color-gray-600;
-  box-shadow: 0 8px 0 0 $color-gray-600, 0 16px 0 0 $color-gray-600;
+  box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
 }
 
 .main-nav--opened .main-nav__toggle {
   top: 20px;
-  right: 30px;
+  right: 21px;
   width: 30px;
   height: 30px;
   padding: 20px;

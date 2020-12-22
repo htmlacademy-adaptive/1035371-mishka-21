@@ -94,7 +94,7 @@ const copy = () => {
     .src(
       [
         "source/fonts/*.{woff2,woff}",
-        "source/*.ico",
+        "source/img/*.ico",
         "source/img/**/*.{jpg,png,svg}",
       ],
       {
