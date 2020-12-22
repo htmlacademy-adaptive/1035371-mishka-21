@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link as="font" href="fonts/opensans.woff2" rel="preload">
+  <link as="font" href="fonts/opensansbold.woff2" rel="preload">
   <link href="img/mishka.ico" rel='shortcut icon' type='image/x-icon'/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -108,11 +110,11 @@
         <ul class="input-list input-list--customer-name">
           <li class="text-input text-input--name">
             <label class="text-input__label" for="name-input">Имя:</label>
-            <input class="text-input__field" type="text" id="name-input" placeholder="Введите ваше имя*">
+            <input class="text-input__field" id="name-input" placeholder="Введите ваше имя*" required type="text">
           </li>
           <li class="text-input text-input--name">
             <label class="text-input__label" for="surname-input">Фамилия:</label>
-            <input class="text-input__field" type="text" id="surname-input" placeholder="Укажите фамилию*">
+            <input class="text-input__field" id="surname-input" placeholder="Укажите фамилию*" required type="text">
           </li>
           <li class="text-input text-input--name">
             <label class="text-input__label" for="patronymic-input">Отчество:</label>
@@ -125,14 +127,14 @@
           <ul class="input-list input-list--customer-contacts">
             <li class="text-input text-input--phone">
               <label class="form-group__heading form-group__heading--tel" for="tel-input">Тел</label>
-              <input class="text-input__field text-input__field--tel" type="tel" id="tel-input" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <input class="text-input__field text-input__field--tel" id="tel-input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required type="tel">
               <svg class="text-input__icon text-input__icon--tel" height="24" viewBox="0 0 25 24" width="25">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
             </li>
             <li class="text-input text-input--email">
               <label class="form-group__heading form-group__heading--email" for="email-input">E-mail</label>
-              <input class="text-input__field text-input__field--email" type="email" id="email-input" placeholder="Ваш Email*">
+              <input class="text-input__field text-input__field--email" id="email-input" placeholder="Ваш Email*" required type="email">
               <svg class="text-input__icon text-input__icon--email" height="21" viewBox="0 0 32 21" width="32">
                 <use xlink:href="img/sprite.svg#mail"></use>
               </svg>
